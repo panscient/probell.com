@@ -5,14 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Home</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
 </head>
 <body>
 
   <div class="top-bar">
     <img
       class="logo-img"
-      src="https://lh3.googleusercontent.com/sitesv/APaQ0SS3PT7CEqM4MosP2Sw4Rx1OOkE-7xwd73QUWbX3X1dPnboVbMnuLL85-y3KViXdpOVDeQXO08GnWyfeqE-LMrQlf7ZjaqZduv4Pmh1wlvfBJ8ejnsURGF2MhiyXoSKJTUu0x6iThcfoVtnWdsF7deCWU_VJOLqJQkuTa1ADIxVItGjeni8vBQ=w16383"
-      alt="Jonah Probell"
+      src="header_white_text.png"
+      alt="Intellectual Probell"
     />
     <ul class="top-nav">
       <li><a href="index.html" class="active">Home</a></li>
@@ -24,45 +25,145 @@
   <div class="content">
 
     <!-- ── Home ── -->
-    <p>Hi. I'm Jonah Probell.</p>
-    <p>My main focus is <a href="https://www.lexi.vc/" target="_blank">Lexi Ventures</a>, investing in the gene tech revolution.</p>
-    <p>Beyond that, I explore topics in detail in <a href="https://probell.substack.com/" target="_blank">Substack posts</a> and in brief as <a href="https://x.com/probell" target="_blank">tweets</a>.</p>
+    <div class="intro-block">
+      <img class="intro-photo" src="jonah_picnic.png" alt="Jonah Probell" />
+      <div>
+        <p>Hi. I'm Jonah Probell.</p>
+        <p>I am the founding partner of <a href="https://www.lexi.vc/" target="_blank">Lexi Ventures</a>, investing in the gene tech revolution.</p>
+        <p>Beyond that, I explore topics in detail in <a href="https://probell.substack.com/" target="_blank">Substack posts</a> and in brief as <a href="https://x.com/probell" target="_blank">tweets</a>.</p>
+      </div>
+    </div>
+
+    <!-- ── Tweet ── -->
+    <hr class="section-divider" />
+    <h2 class="section-heading">A thought</h2>
+    <div class="tweet-band">
+      <div class="tweet-nav">
+        <button class="tweet-btn" id="tweet-prev" title="Previous">&#9650;</button>
+        <button class="tweet-btn" id="tweet-next" title="Next">&#9660;</button>
+      </div>
+      <div id="tweet-text" class="tweet-text">Loading&hellip;</div>
+    </div>
+
+    <!-- ── Substack ── -->
+    <hr class="section-divider" />
+    <h2 class="section-heading">Recent posts</h2>
+    <div id="substack-posts" class="substack-grid">
+      <div class="substack-loading">Loading&hellip;</div>
+    </div>
 
     <!-- ── Books ── -->
     <hr class="section-divider" id="books" />
+    <h2 class="section-heading">Books</h2>
 
-    <img
-      src="https://lh3.googleusercontent.com/sitesv/APaQ0SR8i4y184XjDbmyfxrdkHEbLz38HwaUP7B9Nz81jowepWoQ3VipX3_aoYYUWo-8gPSOvY4z9fBrt26DL_nVrusMGZQjuv_VuWjFcJgLAR8ISyi72rBWCSc2yc8H8I3St3WhCiIxUNMoCzmTPMtUCrhv1WTyiI55P2I4AOX6oHM3XsvvdPMx9MgQ_SmUVIP1EE-EUHrF2-WRDGFMi-8fL3_LCp2iPI4rK92cs-I=w1280"
-      alt="Patenting for the Small Company"
-    />
+    <div class="book-entry">
+      <div class="book-cover">
+        <img src="book1.png" alt="Patenting for the Small Company" />
+      </div>
+      <div class="book-text">
+        <h2>Patenting for the Small Company</h2>
+        <p><a href="https://www.amazon.com/Patenting-Small-Company-Jonah-Probell/dp/1542841445" target="_blank">Available online</a></p>
+        <p>A concise book for small company executives setting up their organization and processes to maximize the efficiency of converting patenting budget to portfolio value.</p>
+        <p>Discover how to:</p>
+        <ul>
+          <li>Harvest ideas from all facets of a development team</li>
+          <li>Avoid the pitfalls of prior art</li>
+          <li>Prepare the broadest valid claim set</li>
+          <li>Prune a portfolio to manage costs</li>
+          <li>Implement a coherent international patenting strategy</li>
+          <li>Maximize generated value within a budget</li>
+        </ul>
+        <p>Accolades</p>
+        <p>"The definitive guide for organizing a patenting team." -Thomas Alva Edison</p>
+        <p>"Jonah Probell unveils the secrets to building a valuable patent portfolio while saving money." -Benjamin Franklin</p>
+        <p>"A mandatory desk reference for patent portfolio managers and small company executives alike." -Steve Jobs</p>
+      </div>
+    </div>
 
-    <h2>Patenting for the Small Company</h2>
-
-    <p><a href="https://www.amazon.com/Patenting-Small-Company-Jonah-Probell/dp/1542841445" target="_blank">Available online</a></p>
-
-    <p>A concise book for small company executives setting up their organization and processes to maximize the efficiency of converting patenting budget to portfolio value.</p>
-
-    <p>Discover how to:</p>
-    <ul>
-      <li>Harvest ideas from all facets of a development team</li>
-      <li>Avoid the pitfalls of prior art</li>
-      <li>Prepare the broadest valid claim set</li>
-      <li>Prune a portfolio to manage costs</li>
-      <li>Implement a coherent international patenting strategy</li>
-      <li>Maximize generated value within a budget</li>
-    </ul>
-
-    <p>Accolades</p>
-    <p>"The definitive guide for organizing a patenting team." -Thomas Alva Edison</p>
-    <p>"Jonah Probell unveils the secrets to building a valuable patent portfolio while saving money." -Benjamin Franklin</p>
-    <p>"A mandatory desk reference for patent portfolio managers and small company executives alike." -Steve Jobs</p>
-
-    <h2>Patenting for Value</h2>
-
-    <p>The economics of patenting and a recipe for multiplying company value through patenting.</p>
-    <p>Coming eventually</p>
+    <div class="book-entry">
+      <div class="book-cover">
+        <div class="book-placeholder"></div>
+      </div>
+      <div class="book-text">
+        <h2>Patenting for Value</h2>
+        <p>The economics of patenting and a recipe for multiplying company value through patenting.</p>
+        <p>Coming eventually</p>
+      </div>
+    </div>
 
   </div>
+
+  <script>
+    // ── Tweets ──
+    (function () {
+      var TWEETS_URL = 'https://raw.githubusercontent.com/panscient/Tweets/main/tweets.txt';
+      var tweets = [];
+      var idx = 0;
+
+      function render() {
+        if (!tweets.length) return;
+        document.getElementById('tweet-text').textContent = '\u201c' + tweets[idx] + '\u201d';
+      }
+
+      fetch(TWEETS_URL)
+        .then(function (r) { return r.text(); })
+        .then(function (text) {
+          // Tweets are delimited by double newlines; single newlines within a block are one tweet
+          tweets = text.split(/\r?\n\r?\n/).map(function (block) {
+            return block.split(/\r?\n/).map(function (l) { return l.trim(); }).filter(Boolean).join(' ');
+          }).filter(Boolean);
+          idx = Math.floor(Math.random() * tweets.length);
+          render();
+        })
+        .catch(function () {
+          document.getElementById('tweet-text').textContent = 'Could not load.';
+        });
+
+      document.getElementById('tweet-prev').addEventListener('click', function () {
+        if (!tweets.length) return;
+        idx = (idx - 1 + tweets.length) % tweets.length;
+        render();
+      });
+      document.getElementById('tweet-next').addEventListener('click', function () {
+        if (!tweets.length) return;
+        idx = (idx + 1) % tweets.length;
+        render();
+      });
+    })();
+
+    // ── Substack RSS ──
+    (function () {
+      var RSS = 'https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fprobell.substack.com%2Ffeed';
+      var container = document.getElementById('substack-posts');
+
+      fetch(RSS)
+        .then(function (r) { return r.json(); })
+        .then(function (data) {
+          var items = (data.items || []).slice(0, 3);
+          if (!items.length) { container.innerHTML = '<p>No posts found.</p>'; return; }
+          container.innerHTML = '';
+          items.forEach(function (item) {
+            var thumb = item.thumbnail || item.enclosure && item.enclosure.link || '';
+            var date = item.pubDate ? new Date(item.pubDate).toLocaleDateString('en-US', {year:'numeric', month:'short', day:'numeric'}) : '';
+            var card = document.createElement('a');
+            card.className = 'substack-card';
+            card.href = item.link;
+            card.target = '_blank';
+            card.rel = 'noopener';
+            card.innerHTML =
+              (thumb ? '<img src="' + thumb + '" alt="" class="substack-thumb" />' : '<div class="substack-thumb substack-thumb-empty"></div>') +
+              '<div class="substack-info">' +
+                '<div class="substack-title">' + item.title + '</div>' +
+                (date ? '<div class="substack-date">' + date + '</div>' : '') +
+              '</div>';
+            container.appendChild(card);
+          });
+        })
+        .catch(function () {
+          container.innerHTML = '<p>Could not load recent posts.</p>';
+        });
+    })();
+  </script>
 
 </body>
 </html>

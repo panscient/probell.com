@@ -1,26 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Montserrat', Arial, sans-serif;
   font-size: 16px;
-  background: #fff;
-  color: #222;
+  background: #f5f0e8;
+  color: #2a2a2a;
 }
 
-/* ── Top nav bar ── */
+/* ── Header / nav bar ── */
 .top-bar {
-  background: #fff;
-  border-bottom: 1px solid #e0e0e0;
-  padding: 0 24px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #2c3e3a;
+  padding: 0 32px;
   display: flex;
   align-items: center;
-  height: 64px;
-  gap: 24px;
+  justify-content: space-between;
+  height: 60px;
 }
 
 .top-bar .logo-img {
-  height: 40px;
+  height: 52px;
   width: auto;
+  display: block;
 }
 
 .top-nav {
@@ -31,30 +36,35 @@ body {
 
 .top-nav a {
   display: block;
-  padding: 8px 16px;
-  font-size: 14px;
-  color: #222;
+  padding: 8px 18px;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #c8bfaa;
   text-decoration: none;
-  border-radius: 4px;
+  border-radius: 3px;
+  transition: color 0.15s, background 0.15s;
 }
 
 .top-nav a:hover {
-  background: #f1f3f4;
+  color: #fff;
+  background: rgba(255,255,255,0.08);
 }
 
 .top-nav a.active {
-  background: #e8f0fe;
-  color: #1a73e8;
+  color: #fff;
+  background: rgba(255,255,255,0.15);
 }
 
 /* ── Main content ── */
 .content {
-  max-width: 840px;
+  max-width: 860px;
   margin: 48px auto;
-  padding: 0 24px 64px;
+  padding: 0 28px 72px;
   font-size: 16px;
-  line-height: 1.7;
-  color: #222;
+  line-height: 1.75;
+  color: #2a2a2a;
 }
 
 .content p {
@@ -62,7 +72,7 @@ body {
 }
 
 .content a {
-  color: #1a73e8;
+  color: #4a7c6f;
   text-decoration: none;
 }
 
@@ -72,20 +82,20 @@ body {
 
 .content h1 {
   font-size: 26px;
-  font-weight: bold;
+  font-weight: 600;
   margin: 0 0 20px 0;
 }
 
 .content h2 {
-  font-size: 20px;
-  font-weight: bold;
-  margin: 32px 0 12px 0;
+  font-size: 19px;
+  font-weight: 600;
+  margin: 28px 0 10px 0;
 }
 
 .content h3 {
-  font-size: 17px;
-  font-weight: bold;
-  margin: 24px 0 10px 0;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 22px 0 8px 0;
 }
 
 .content ul {
@@ -113,8 +123,78 @@ body {
 
 .section-divider {
   border: none;
-  border-top: 1px solid #e0e0e0;
+  border-top: 1px solid #d4c9b4;
   margin: 48px 0;
+}
+
+/* ── Random tweet ── */
+.tweet-band {
+  background: #ede8dc;
+  border-left: 3px solid #2c3e3a;
+  padding: 16px 20px;
+  margin: 32px 0;
+  font-style: italic;
+  font-size: 15px;
+  color: #3a3a3a;
+  line-height: 1.6;
+  cursor: pointer;
+  user-select: none;
+}
+
+.tweet-band:hover {
+  background: #e6e0d2;
+}
+
+/* ── Book layout ── */
+.book-entry {
+  display: flex;
+  gap: 28px;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.book-entry .book-cover {
+  flex: 0 0 188px;
+  width: 188px;
+}
+
+.book-entry .book-cover img,
+.book-entry .book-cover .book-placeholder {
+  width: 188px;
+  aspect-ratio: 1305 / 1911;
+  display: block;
+  border: 1px solid #c8bfaa;
+}
+
+.book-entry .book-cover .book-placeholder {
+  background: #e6e0d2;
+}
+
+.book-entry .book-text {
+  flex: 1;
+}
+
+.book-entry .book-text h2 {
+  margin-top: 0;
+  font-size: 16px;
+}
+
+
+/* ── Intro block ── */
+.intro-block {
+  display: flex;
+  gap: 28px;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+
+.intro-photo {
+  flex: 0 0 25%;
+  width: 25%;
+  height: auto;
+  display: block;
+  border-radius: 3px;
+  margin: 0;
 }
 
 /* ── Patents TOC ── */
@@ -133,10 +213,138 @@ body {
 }
 
 .toc ul li a {
-  color: #1a73e8;
+  color: #4a7c6f;
   text-decoration: none;
 }
 
 .toc ul li a:hover {
   text-decoration: underline;
+}
+
+/* ── About photo ── */
+.about-photo {
+  float: right;
+  margin: 0 0 24px 32px;
+  max-width: 220px;
+}
+
+/* ── Section headings ── */
+.section-heading {
+  font-size: 26px;
+  font-weight: 600;
+  margin: 0 0 16px 0;
+  letter-spacing: 0.01em;
+}
+
+/* ── Tweet band ── */
+.tweet-band {
+  background: #ede8dc;
+  border-left: 3px solid #2c3e3a;
+  padding: 14px 20px 14px 0;
+  margin: 0 0 8px 0;
+  display: flex;
+  align-items: stretch;
+  gap: 0;
+}
+
+.tweet-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 0 14px;
+  flex: 0 0 auto;
+  border-right: 1px solid #c8bfaa;
+  margin-right: 18px;
+}
+
+.tweet-btn {
+  background: none;
+  border: 1px solid #b0a890;
+  border-radius: 3px;
+  padding: 4px 8px;
+  font-size: 13px;
+  cursor: pointer;
+  color: #2c3e3a;
+  line-height: 1;
+}
+
+.tweet-btn:hover {
+  background: #e0d8c8;
+}
+
+.tweet-text {
+  font-style: italic;
+  font-size: 15px;
+  color: #3a3a3a;
+  line-height: 1.6;
+  flex: 1;
+  align-self: center;
+}
+
+.tweet-counter {
+  display: none;
+}
+
+/* ── Substack posts ── */
+.substack-grid {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 8px;
+}
+
+.substack-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid #d4c9b4;
+  border-radius: 4px;
+  overflow: hidden;
+  background: #faf7f2;
+  transition: box-shadow 0.15s;
+}
+
+.substack-card:hover {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  text-decoration: none;
+}
+
+.substack-thumb {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+}
+
+.substack-thumb-empty {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #e6e0d2;
+  display: block;
+}
+
+.substack-info {
+  padding: 10px 12px 12px;
+}
+
+.substack-title {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 4px;
+  color: #2a2a2a;
+}
+
+.substack-date {
+  font-size: 12px;
+  color: #888;
+}
+
+.substack-loading {
+  font-size: 14px;
+  color: #888;
+  font-style: italic;
 }
