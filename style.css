@@ -230,7 +230,7 @@ body {
 
 /* ── Section headings ── */
 .section-heading {
-  font-size: 26px;
+  font-size: 39px;
   font-weight: 600;
   margin: 0 0 16px 0;
   letter-spacing: 0.01em;
@@ -251,10 +251,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 6px;
-  padding: 0 14px;
+  padding: 10px 14px 0;
   flex: 0 0 auto;
+  align-self: flex-start;
   border-right: 1px solid #c8bfaa;
   margin-right: 18px;
 }
@@ -280,7 +281,8 @@ body {
   color: #3a3a3a;
   line-height: 1.6;
   flex: 1;
-  align-self: center;
+  align-self: flex-start;
+  padding-top: 4px;
 }
 
 .tweet-counter {
@@ -347,4 +349,87 @@ body {
   font-size: 14px;
   color: #888;
   font-style: italic;
+}
+
+/* ── Social buttons ── */
+.social-buttons {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.social-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 28px;
+  border: 1.5px solid;
+  border-radius: 10px;
+  background: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: box-shadow 0.15s, background 0.15s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+  min-width: 140px;
+  justify-content: center;
+}
+
+.social-btn:hover {
+  text-decoration: none;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.12);
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  display: block;
+}
+
+.social-btn-substack {
+  border-color: #FF6719;
+  color: #FF6719;
+}
+.social-btn-substack:hover {
+  background: #fff8f4;
+}
+
+.social-btn-x {
+  border-color: #1a1a1a;
+  color: #1a1a1a;
+}
+.social-btn-x:hover {
+  background: #f7f7f7;
+}
+
+.social-btn-linkedin {
+  border-color: #0A66C2;
+  color: #0A66C2;
+}
+.social-btn-linkedin:hover {
+  background: #f0f6ff;
+}
+
+/* ── Intro greeting ── */
+.intro-hi {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  line-height: 1.3;
+}
+
+.intro-name {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 16px;
+  line-height: 1.3;
+}
+
+/* ── Logo link ── */
+.top-bar a:has(.logo-img) {
+  display: flex;
+  align-items: flex-start;
+  line-height: 0;
 }

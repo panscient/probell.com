@@ -10,14 +10,14 @@
 <body>
 
   <div class="top-bar">
-    <img
+    <a href="/"><img
       class="logo-img"
       src="header_white_text.png"
       alt="Intellectual Probell"
-    />
+    /></a>
     <ul class="top-nav">
       <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="patents.html">Patents</a></li>
+      <li><a href="patents.html">Patenting</a></li>
       <li><a href="about.html">About</a></li>
     </ul>
   </div>
@@ -28,15 +28,15 @@
     <div class="intro-block">
       <img class="intro-photo" src="jonah_picnic.png" alt="Jonah Probell" />
       <div>
-        <p>Hi. I'm Jonah Probell.</p>
-        <p>I am the founding partner of <a href="https://www.lexi.vc/" target="_blank">Lexi Ventures</a>, investing in the gene tech revolution.</p>
-        <p>Beyond that, I explore topics in detail in <a href="https://probell.substack.com/" target="_blank">Substack posts</a> and in brief as <a href="https://x.com/probell" target="_blank">tweets</a>.</p>
+        <p class="intro-hi">Hi!</p>
+        <p class="intro-name">I'm Jonah Probell.</p>
+        <p>I am the founding partner of <a href="https://www.lexi.vc/" target="_blank">Lexi Ventures</a>, investing in the genetic engineering revolution.</p>
       </div>
     </div>
 
     <!-- ── Tweet ── -->
     <hr class="section-divider" />
-    <h2 class="section-heading">A thought</h2>
+    <h2 class="section-heading">Think about it</h2>
     <div class="tweet-band">
       <div class="tweet-nav">
         <button class="tweet-btn" id="tweet-prev" title="Previous">&#9650;</button>
@@ -47,14 +47,37 @@
 
     <!-- ── Substack ── -->
     <hr class="section-divider" />
-    <h2 class="section-heading">Recent posts</h2>
-    <div id="substack-posts" class="substack-grid">
-      <div class="substack-loading">Loading&hellip;</div>
+    <h2 class="section-heading">Be social</h2>
+    <p>I explore topics in detail in Substack posts and in brief as tweets.</p>
+    <div class="social-buttons">
+
+      <a class="social-btn social-btn-substack" href="https://probell.substack.com/" target="_blank" rel="noopener">
+        <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+          <path fill="#FF6719" d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z"/>
+        </svg>
+        <span>Substack</span>
+      </a>
+
+      <a class="social-btn social-btn-x" href="https://www.x.com/probell" target="_blank" rel="noopener">
+        <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+          <path fill="#000000" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.253 5.622 5.91-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+        </svg>
+        <span>Twitter</span>
+      </a>
+
+      <a class="social-btn social-btn-linkedin" href="https://www.linkedin.com/in/probell" target="_blank" rel="noopener">
+        <svg class="social-icon" viewBox="0 0 24 24" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+          <path fill="#0A66C2" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+        </svg>
+        <span>LinkedIn</span>
+      </a>
+
     </div>
 
     <!-- ── Books ── -->
     <hr class="section-divider" id="books" />
-    <h2 class="section-heading">Books</h2>
+    <h2 class="section-heading">Read</h2>
+    <p>I have written two books on patenting.</p>
 
     <div class="book-entry">
       <div class="book-cover">
@@ -73,10 +96,10 @@
           <li>Implement a coherent international patenting strategy</li>
           <li>Maximize generated value within a budget</li>
         </ul>
-        <p>Accolades</p>
-        <p>"The definitive guide for organizing a patenting team." -Thomas Alva Edison</p>
-        <p>"Jonah Probell unveils the secrets to building a valuable patent portfolio while saving money." -Benjamin Franklin</p>
-        <p>"A mandatory desk reference for patent portfolio managers and small company executives alike." -Steve Jobs</p>
+        <h3>Accolades</h3>
+        <p>&#8220;<em>The definitive guide for organizing a patenting team.</em>&#8221; &#8209;Thomas Alva Edison</p>
+        <p>&#8220;<em>Jonah Probell unveils the secrets to building a valuable patent portfolio while saving money.</em>&#8221; &#8209;Benjamin Franklin</p>
+        <p>&#8220;<em>A mandatory desk reference for patent portfolio managers and small company executives alike.</em>&#8221; &#8209;Steve Jobs</p>
       </div>
     </div>
 
@@ -102,7 +125,7 @@
 
       function render() {
         if (!tweets.length) return;
-        document.getElementById('tweet-text').textContent = '\u201c' + tweets[idx] + '\u201d';
+        document.getElementById('tweet-text').innerHTML = tweets[idx];
       }
 
       fetch(TWEETS_URL)
@@ -110,7 +133,7 @@
         .then(function (text) {
           // Tweets are delimited by double newlines; single newlines within a block are one tweet
           tweets = text.split(/\r?\n\r?\n/).map(function (block) {
-            return block.split(/\r?\n/).map(function (l) { return l.trim(); }).filter(Boolean).join(' ');
+            return block.split(/\r?\n/).map(function (l) { return l.trim(); }).filter(Boolean).join('<br>');
           }).filter(Boolean);
           idx = Math.floor(Math.random() * tweets.length);
           render();
@@ -131,38 +154,6 @@
       });
     })();
 
-    // ── Substack RSS ──
-    (function () {
-      var RSS = 'https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fprobell.substack.com%2Ffeed';
-      var container = document.getElementById('substack-posts');
-
-      fetch(RSS)
-        .then(function (r) { return r.json(); })
-        .then(function (data) {
-          var items = (data.items || []).slice(0, 3);
-          if (!items.length) { container.innerHTML = '<p>No posts found.</p>'; return; }
-          container.innerHTML = '';
-          items.forEach(function (item) {
-            var thumb = item.thumbnail || item.enclosure && item.enclosure.link || '';
-            var date = item.pubDate ? new Date(item.pubDate).toLocaleDateString('en-US', {year:'numeric', month:'short', day:'numeric'}) : '';
-            var card = document.createElement('a');
-            card.className = 'substack-card';
-            card.href = item.link;
-            card.target = '_blank';
-            card.rel = 'noopener';
-            card.innerHTML =
-              (thumb ? '<img src="' + thumb + '" alt="" class="substack-thumb" />' : '<div class="substack-thumb substack-thumb-empty"></div>') +
-              '<div class="substack-info">' +
-                '<div class="substack-title">' + item.title + '</div>' +
-                (date ? '<div class="substack-date">' + date + '</div>' : '') +
-              '</div>';
-            container.appendChild(card);
-          });
-        })
-        .catch(function () {
-          container.innerHTML = '<p>Could not load recent posts.</p>';
-        });
-    })();
   </script>
 
 </body>
