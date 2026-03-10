@@ -1,0 +1,384 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>Lexra</title>
+  <meta name="description" content="Lexra" />
+  <meta name="keywords" content="Lexra MIPS IP" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Balthazar|Open+Sans" rel="stylesheet">
+  <!-- Global Site Tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GA_TRACKING_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-56652872-1');
+  </script>
+</head>
+
+ <body>
+  <table cellpadding=0 border=0 cellspacing=0>
+   <tr>
+    <td>
+     <h1>The Lexra Story</h1>
+
+     <a href="./lexraphoto.html"><img width=197 height=38 align=right src="lexralogo.jpg" alt="Lexra logo"></a>
+
+     <p>
+      I worked for Lexra, a scrappy CPU company, now out of business. The Lexra story is an interesting one, filled with
+      lessons about the business of selling microprocessors and semiconductor intellectual property. I have found many
+      incorrect statements published about Lexra. With this document, I hope to set the record straight.
+     </p>
+
+     <p>
+      Lexra was founded in 1997 but the story begins in the 1980s. Academics at Stanford and Berkeley realized that a
+      computer processor could achieve higher performance by running simpler instructions at a higher clock speed. Such a
+      computer processor is known as a <a href="http://en.wikipedia.org/wiki/Reduced_instruction_set_computer">reduced
+      instruction set computer (RISC)</a>. The <a href="http://en.wikipedia.org/wiki/MIPS_architecture">MIPS instruction
+      set architecture</a> was developed as an academic project at Stanford by a group working under the direction of
+      <a href="http://en.wikipedia.org/wiki/John_L._Hennessy">John Hennessy</a> who was eventually promoted to president
+      of Stanford. MIPS originally stood for microprocessor without interlocked pipeline stages. MIPS Computer Systems
+      Inc. was formed to develop and sell commercial chips that executed the MIPS instruction set. The largest customer of
+      MIPS Computer Systems Inc was Silicon Graphics, which dominated the market for high end workstations used for creating
+      synthetic digital graphics and animations. In the early 1990s MIPS Computer Systems was in danger of going out of
+      business so Silicon Graphics acquired their key chip supplier.
+     </p>
+
+     <p>
+      Also in the 1990s, it became apparent to the developers of chips for embedded systems (any machine with a computer
+      processor that is not a PC, workstation, or server) that the simplicity of RISC processor architectures made them
+      well suited for such small low-cost chips. ARM proved this quite successfully with their own RISC instruction set that
+      had been created for the <a href="http://en.wikipedia.org/wiki/Acorn_Computers">Acorn PC</a> in the 1980s. ARM
+      pioneered the business of developing a processor without making chips and licensing the design to many other companies
+      that make chips. This is known as the
+      <a href="http://en.wikipedia.org/wiki/Semiconductor_intellectual_property_core">semiconductor intellectual
+      property</a> (IP) business.
+     </p>
+
+     <p>
+      The founders of Lexra, Charlie Cheng and Pat Hays, working from the Boston area, recognized that the MIPS-I
+      <a href="http://en.wikipedia.org/wiki/Instruction_set_architecture">instruction set architecture (ISA)</a> was a
+      classic RISC processor architecture with all of the properties that make a processor useful for embedded chips, plus
+      the benefit of having an existing strong base of software development tools
+      (<a href="http://en.wikipedia.org/wiki/Compiler">compilers</a>, assemblers, debuggers, etc.). Lexra incorporated and
+      began developing an IP core that executed the MIPS-I instruction set. <b>Lexra developed its processor from scratch
+      without using source code or other <a href="http://en.wikipedia.org/wiki/Intellectual_property">intellectual
+      property</a> from any other company.</b> Incidentally, at the time, ARM only licensed hard core chip lay-outs. Lexra
+      was among the first IP companies to license soft core RTL designs, which has since become the preferred method for
+      delivering IP products.
+     </p>
+
+     <p>
+      An instruction set is a language of commands given to a machine. Nobody can patent, copyright, or otherwise own a
+      language or an instruction set. Lexra had the right, legally and ethically, to design an IP core with the MIPS
+      instruction set.
+     </p>
+
+     <p>
+      Meanwhile, back in Mountain View, Silicon Graphics' business was struggling despite a booming high tech economy.
+      <b>Silicon Graphics spun-out MIPS Technologies, Inc. as a semiconductor intellectual property licensing company that
+      would compete directly with Lexra after Lexra was already established in that business</b>. Due to a single deal
+      between Silicon Graphics and Nintendo, MIPS Technologies Inc. began its life with approximately ten times as much
+      money as Lexra. MIPS Technologies also had about five times as many engineers as Lexra.
+     </p>
+
+     <p>
+      Though you can not patent an instruction set, you can patent techniques that are necessary to implement a
+      particular unusual instruction that is part of the instruction set. That prevents competitors from creating a fully
+      compatible clone of your processor without infringing your patent. There are four instructions in the MIPS-I
+      instruction set that are protected by one US patent,
+      <a href="http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO2&Sect2=HITOFF&p=1&u=/netahtml/PTO/search-bool.html&r=1&f=G&l=50&co1=AND&d=PTXT&s1=4814976.PN.&OS=PN/4814976&RS=PN/4814976">4,814,976</a>.
+      These instructions, lwl, lwr, swl, and swr are known as the unaligned load and store instructions. These instructions
+      are useful in systems in which memory is scarce or expensive. In such systems, it is often useful to pack 16-bit or
+      32-bit data values in to memory in such a way that they are aligned to arbitrary byte boundaries and not necessarily
+      to natural 16-bit half-word or 32-bit word boundaries. Accessing such unaligned variables requires at least two memory
+      bus clock cycles, whereas accesses to aligned data can be performed in a single cycle. Most assembly programmers and
+      compilers for modern systems align data to their natural address boundaries in order to gain the memory bus
+      performance benefit of aligned loads and stores.
+     </p>
+
+     <p>
+      Prudent high tech companies study their competitors' patent portfolios, and Lexra was no exception. Lexra was well
+      aware of the patent on unaligned loads and stores that was owned by MIPS Computers Systems, then by Silicon Graphics,
+      and later by MIPS Technologies. To avoid infringing, Lexra chose not to implement unaligned loads and stores in its
+      processor design.
+     </p>
+
+     <p>
+      When MIPS filed its <a href="http://www.secinfo.com/dsBqn.7Xk.htm">S-1 IPO prospectus form</a> in 1998 it sued Lexra
+      for copyright infringement. The suit was settled after a few months with Lexra agreeing not to use MIPS trademarks
+      without attribution and to state in its documentation and in its public statements that it implemented "the MIPS-I
+      instruction set except for unaligned loads and stores". MIPS Technologies agreed to the settlement, apparently
+      acknowledging that Lexra did not execute unaligned loads and stores.
+     </p>
+
+     <p>
+      If a Lexra processor encountered an unaligned load or store instruction in the program that it was executing then it
+      did the same thing that it would do for any other invalid opcode, it took a reserved instruction exception. In the
+      second lawsuit between MIPS Technologies and Lexra, filed November 1999, MIPS Technologies claimed that because
+      exception handler software could be written to emulate the function of unaligned load and store hardware, using
+      many other instructions, Lexra's processors infringed the patent. Upon learning of this broad interpretation of the patent, Lexra
+      requested that the <a href="http://en.wikipedia.org/wiki/United_States_Patent_and_Trademark_Office">US Patent and
+      Trademark office (USPTO)</a> reexamine whether the patent was novel when granted. Almost every microprocessor in the
+      world can emulate the functionality of unaligned loads and stores in software. MIPS Technologies did not invent that.
+      <b>By any reasonable interpretation of the MIPS Technologies' patent, Lexra did not infringe.</b> In mid-2001 Lexra
+      received a preliminary ruling from the USPTO that key claims in the unaligned load and store patent were invalid
+      because of prior art in an IBM CISC patent. However, MIPS Technologies appealed the USPTO ruling and won a favorably
+      broad interpretation of the language of the patent from a judge. That forced Lexra into a settlement that included
+      dropping the reexamination request before MIPS Technologies might have lost its appeal.
+     </p>
+
+     <p>
+      The case of MIPS Technologies v Lexra was ultimately settled out of court and the request for reexamination of the
+      patent was dropped. To this day there is no precedent indicating that processors that execute the MIPS-I instruction
+      set that treat unaligned loads and stores as reserved instructions, such as Lexra's, infringed the '976 patent. The
+      patent expired on December 23, 2006 at which point it became legal for anybody to implement the complete MIPS-I
+      instruction set, including unaligned loads and stores.
+     </p>
+
+     <p>
+      After its experience with Lexra, MIPS Technologies changed all of its 32-bit cores to use its new MIPS32 instruction
+      set which extends the MIPS-I instruction set to include other features patented by MIPS Technologies. This is similar
+      to Intel's addition of the instruction set extensions to Pentium III in order to prevent AMD from building
+      compatible processors.
+     </p>
+
+     <p>
+      Cores from Lexra as compared to cores from MIPS Technologies were smaller, had higher clock speed, had high
+      performance instruction extensions, brought features (such as on-chip debug, MIPS16, write-back caches, MMU, and
+      more) to market sooner, and were less expensive. Despite MIPS Technologies' relatively abundant resources, their
+      product offerings in the market were inferior, their investors wanted to see MIPS Technologies defend its
+      intellectual property, and MIPS Technologies needed to justify the license fees that other companies such as
+      Broadcom, PMC-Sierra, and LSI Logic were paying for rights to use the instruction set for their own processors. This
+      left MIPS Technologies little choice but to sue Lexra, despite a weak case.
+     </p>
+
+     <p>
+      Ultimately, MIPS Technologies hurt Lexra's business, Lexra hurt MIPS Technologies' business, and ARM made off with a
+      solid dominance of the IP market. In the court case MIPS Technologies' stalled at every opportunity possible until
+      Lexra ran out of money to fight. Because MIPS Technologies started the game with far more money than Lexra, they
+      outlasted and Lexra was forced into a settlement one week before a trial. Though MIPS Technologies was suing Lexra,
+      the settlement agreement involved MIPS paying Lexra money. The benefit that MIPS Technologies got in exchange was that
+      Lexra exited the IP business. Lexra failed one year later in an attempt to establish itself as a communications chip
+      company during the bottom of the telecom business downturn.
+     </p>
+
+     <p>
+      Some Lexra customers disabled the reserved instruction exception for unaligned loads and stores in their chip
+      products. With such a design modification, unaligned loads and stores are treated as no-ops and can not be emulated in
+      an exception handler. MIPS Technologies would have had no claim of infringement against such designs. Despite that,
+      after settling with Lexra, MIPS Technologies threatened legal action against Lexra's former customers. Many companies
+      each found it less expensive to agree to contracts that require payments to MIPS rather than to fight. This strategy by
+      MIPS Technologies is viewed by some as <a href="http://en.wikipedia.org/wiki/Extortion">extortion</a> under threat of
+      <a href="http://en.wikipedia.org/wiki/Malicious_prosecution">malicious prosecution</a>.
+     </p>
+
+     <p>
+      Lexra had about 40 licensees while it was in business, about 30 of which manufactured chips with Lexra processor
+      cores. Some chips based on Lexra processor cores are still in production today. Many Lexra licensees do not want their
+      use of Lexra to be known. Several publicly known Lexra core users include
+      <a href="http://www.macronix.com/">Macronix</a>, a digital still camera chip maker in Taiwan,
+      Micronas, an audio/video/automotive chip maker in Europe,
+      <a href="http://www.realtek.com/">Realtek</a>, a wired/wireless LAN ethernet chip maker in Taiwan,
+      Zoran, a digital still camera, DVD, and video system chip maker in Israel and Silicon Valley,
+      <a href="http://www.analog.com/">Analog Devices</a>, a multi-market DSP chip maker headquartered
+      in Massachusetts (through its acquisition of Chiplogic), Trident
+      Microsystems, a digital television chip maker, and Crystal Media, a
+      voice over IP telephone chip maker in Taiwan. Many hobbyists have adapted the Realtek RTL8181, RTL8186, and RTL8651B
+      chips for other purposes by writing software that runs on the Lexra LX5280 processor in those chips.
+     </p>
+
+     <p>
+      I am a hardware, not a software, engineer but I know that in principal it is possible to compile software for Lexra
+      processors using the <a href="http://en.wikipedia.org/wiki/GNU_Compiler_Collection">gnu gcc</a> tools for the MIPS-I R3000 processor. This can be done either by writing an exception
+      trap handler for reserved instructions that detects unaligned load and store instructions and emulates their
+      functionality with shifts and aligned loads and stores or else modifying the compiler so that it does not generate
+      lwl, lwr, swl, and swr instructions. With either of those changes, any C code can run on Lexra processors.
+     </p>
+
+     <p>
+      Advanced hobbyists might even choose to accelerate their critical inner loops by coding them in assembly code using
+      <a href="http://en.wikipedia.org/wiki/Digital_signal_processor">digital signal processing (DSP)</a> instructions that Lexra implemented as extensions to the MIPS-I instruction set.
+     </p>
+
+     <p>
+      Each core that Lexra created built on its predecessors:
+     </p>
+
+     <table border=1>
+      <tr>
+       <th>CPU</th>
+       <th>distinguishing feature</th>
+       <th>pipeline stages</th>
+       <th>code base</th>
+       <th>test chip</th>
+       <th>target market</th>
+       <th>notes</th>
+      </tr>
+      <tr>
+       <td>LX4080</td>
+       <td>MIPS-I RISC soft core</td>
+       <td rowspan="2">5 stage pipeline</td>
+       <td rowspan="2">&nbsp;</td>
+       <td>yes</td>
+       <td>&nbsp;</td>
+       <td>&nbsp;</td>
+      </tr>
+      <tr>
+       <td><a href="LX4180PF.pdf">LX4180</a></td>
+       <td>with MIPS16 code compression and EJTAG on-chip debug</td>
+       <td>yes</td>
+       <td>&nbsp;</td>
+       <td>155 MHz push-button synthesis in .25um technology</td>
+      </tr>
+      <tr>
+       <td><a href="LX4189PF.pdf">LX4189</a></td>
+       <td>configurable multi-way write-back caches and a MMU</td>
+       <td rowspan="6">6 stage pipeline</td>
+       <td rowspan="6">Z</td>
+       <td>&nbsp;</td>
+       <td>&nbsp;</td>
+       <td>266 MHz push-button synthesis in .18um technology</td>
+      </tr>
+      <tr>
+       <td><a href="LX4280PF.pdf">LX4280</a></td>
+       <td>dual-issue superscalar</td>
+       <td>yes</td>
+       <td>&nbsp;</td>
+       <td>200 MHz push-button synthesis in .18um technology</td>
+      </tr>
+      <tr>
+       <td>LX5180</td>
+       <td><a href="EJ_0011-LX5180_LowPower.pdf">power efficient DSP</a> enhanced with Radiax DSP extensions</td>
+       <td>&nbsp;</td>
+       <td>DSP</td>
+       <td>&nbsp;</td>
+      </tr>
+      <tr>
+       <td><a href="LX5280PF.pdf">LX5280</a></td>
+       <td>dual-issue superscalar enhanced with Radiax DSP extensions</td>
+       <td>yes x2</td>
+       <td>DSP</td>
+       <td>200 MHz push-button synthesis in .18um technology</td>
+      </tr>
+      <tr>
+       <td><a href="LX8000PF.pdf">LX8000</a></td>
+       <td>coarse-grained multithreading</td>
+       <td>&nbsp;</td>
+       <td>NPU</td>
+       <td>450 MHz in a .15um hard core</td>
+      </tr>
+      <tr>
+       <td><a href="NetVortexPF2.pdf">NetVortex</a></td>
+       <td>a <a href="epf_2001_slides_final.pdf">chip multiprocessor (CMP) packet processing system</a></td>
+       <td>&nbsp;</td>
+       <td>NPU</td>
+       <td>16 CPUs at 450 MHz</td>
+      </tr>
+      <tr>
+       <td><a href="LX4380PB.pdf">LX4380</a></td>
+       <td>deeper pipeline</td>
+       <td rowspan="2"><a href="7stage.pdf">7 stage pipeline</a></td>
+       <td>Y</td>
+       <td>&nbsp;</td>
+       <td>&nbsp;</td>
+       <td>300 MHz push-button synthesis in .15um technology</td>
+      </tr>
+      <tr>
+       <td>LX4580</td>
+       <td>fine-grained hardware multithreading (HMT)</td>
+       <td>W</td>
+       <td>&nbsp;</td>
+       <td>NPU</td>
+       <td>400 MHz in .13um technology</td>
+      </tr>
+     </table>
+
+     <p>
+      The LX4580 <a href="HMTWhitepaper016-JP.pdf">fine-grained multithreaded processor</a> was a cool internal processor
+      design that ran at 400 MHz with push-button synthesis in .13um technology but was never licensed.
+      It was the processor core for Lexra's <a href="SP-1_PB_rev1.0.pdf">Stream Processor</a> chip project that never made
+      it to tape-out.
+     </p>
+     <p>
+      Lexra also offered a <a href="Development_Board.pdf">LX-PB20K</a> general purpose FPGA / PLD prototyping board.
+     </p>
+
+     <p>
+      Products known to contain Lexra processors: <img src="LexraInside.jpg" align="right" height="134" width="150" alt="Lexra Inside logo">
+     </p>
+
+     <ul>
+      <li><a href="http://www.konicaminolta.com/">Minolta</a> Dimage7 digital still cameras, using the Macronix image processing chip
+      </li>
+      <li><a href="http://www.toshiba.com/">Toshiba</a> SD3750, SD4700, and SD4800 DVD, VCD, MP3-CD, CD players,
+       using the Zoran Vaddis 5 chip
+      </li>
+      <li><a href="http://www.toshiba.com/">Toshiba</a> SDP2000 portable DVD player,
+       using the Zoran Vaddis 5 chip
+      </li>
+      <li><a href="http://www.toshiba.com/">Toshiba</a> RD-X2 DVD-Ram/HDD recorder,
+       using the Zoran Vaddis 5 chip
+      </li>
+      <li><a href="http://www.arcam.co.uk/">Arcam</a> FMJ DV27A, DiVA DV78, DV79, DV79 HDMI, DV88 Plus and DV89 DVD players,
+       using the Zoran Vaddis 5 chip
+      </li>
+      <li><a href="http://www.pioneerelectronics.com/">Pioneer</a> <a href="http://pioneer.jp/press-e/2002/0213-1.html">DVR-3000</a> DVD recorder,
+       using the Zoran Vaddis 5 chip
+      </li>
+      <li><a href="http://rtl8181.sourceforge.net/rtl8181_devices.php">many wireless access points
+       and gateways</a> using the LX5280-based <a href="http://www.realtek.com.tw/">Realtek</a> RTL8181, RTL8186, and
+       RTL8651B chips
+      </li>
+      <li>products using the LX4280-based <a href="http://www.micronas.com/">Micronas</a>
+       MDE-9500 or MDE-9502 including:
+       <ul>
+        <li>The <a href="http://www.cabot.co.uk/">Cabot Communications</a> Callisto over-air
+         download module and Mercator MHEG-5 development kit for integrated analog & digital
+         televisions.
+        </li>
+       </ul>
+      </li>
+      <li>products using the LX4189-based <a href="http://www.analog.com/">Analog Devices</a>
+       AD6489, AD6680, AD6681, Fusiv-VX200 (AD6834), AD6836, Fusiv-NP 210 (AD6843),
+       Fusiv-NP 220 (AD6844), Fusiv-NP 230 (AD6846), or AD6847 including:
+       <ul>
+        <li>The Sagem F@St series residential and SOHO triple-play modems and gateways
+        </li>
+        <li>The icube Play@TV home networking audio/video player set-top box
+        </li>
+        <li>The Viewtran broadband video phone</li>
+        <li>The <a href="http://www.nec.com/">NEC</a> UNIVERGE IX2004 router for small enterprises
+        </li>
+        <li>The <a href="http://jp.yamaha.com/">Yamaha</a> RTX1500 enterprise router</li>
+        <li>other undisclosed large carrier-oriented equipment</li>
+       </ul>
+      </li>
+      <li> products using the Crystal Media CM5000 and CM5001 including:
+       <ul>
+        <li><a href="http://www.euteliavoip.com/">EuteliaVoIP</a> <a href="http://wiki.vocesuip.com/index.php?title=IP301">IP301</a></li>
+        <li><u>High-link </u> GW201O and GW2020</li>
+       </ul>
+      </li>
+     </ul>
+
+     <p>
+      There are many other products with Lexra inside that I have yet to confirm.
+     </p>
+
+     <p>
+      I write this with no disrespect or hard feelings towards my many friends - and they are friends - at MIPS Technologies.
+      However, I feel great pride knowing that people are still using Lexra processors. As best I can, I will help anybody
+      using Lexra processors today.
+     </p>
+
+     <hr/>
+     &copy; Copyright 2005-2012 Jonah Probell
+    </td>
+   </tr>
+  </table>
+ </body>
+</html>
