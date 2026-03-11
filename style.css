@@ -553,10 +553,7 @@ body {
 }
 
 .pub-group {
-  margin-bottom: 8px;
-  border: 1px solid var(--border);
-  border-radius: 6px;
-  overflow: hidden;
+  margin-bottom: 20px;
 }
 
 .pub-decade-btn {
@@ -564,9 +561,10 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 16px;
-  background: var(--bg-subtle);
+  padding: 10px 0 6px 0;
+  background: transparent;
   border: none;
+  border-bottom: 2px solid var(--border);
   font-size: 14px;
   font-weight: 600;
   color: var(--accent);
@@ -577,7 +575,8 @@ body {
 }
 
 .pub-decade-btn:hover {
-  background: var(--bg-subtle);
+  background: transparent;
+  border-bottom-color: var(--accent);
 }
 
 .pub-count {
@@ -619,12 +618,14 @@ body {
 }
 
 .collapsible-btn {
+  -webkit-appearance: none;
+  appearance: none;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 13px 18px;
-  background: var(--bg-subtle);
+  background: transparent;
   border: none;
   font-size: 16px;
   font-weight: 600;
@@ -632,11 +633,12 @@ body {
   cursor: pointer;
   text-align: left;
   font-family: inherit;
-  transition: background 0.15s;
+  transition: color 0.15s;
 }
 
 .collapsible-btn:hover {
-  background: var(--bg-subtle);
+  background: transparent;
+  opacity: 0.8;
 }
 
 .collapsible-chevron {
@@ -657,8 +659,10 @@ body {
 
 /* ── Dark mode toggle ── */
 .theme-toggle {
-  background: none;
-  border: 1px solid rgba(255,255,255,0.3);
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.35);
   border-radius: 20px;
   color: rgba(255,255,255,0.85);
   cursor: pointer;
@@ -668,6 +672,7 @@ body {
   margin-left: 18px;
   transition: border-color 0.15s, color 0.15s;
   white-space: nowrap;
+  line-height: 1.4;
 }
 .theme-toggle:hover {
   border-color: rgba(255,255,255,0.7);
