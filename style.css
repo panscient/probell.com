@@ -5,7 +5,7 @@
 body {
   font-family: 'Montserrat', Arial, sans-serif;
   font-size: 16px;
-  background: #f5f0e8;
+  background: #eceae6;
   color: #2a2a2a;
 }
 
@@ -128,23 +128,6 @@ body {
 }
 
 /* ── Random tweet ── */
-.tweet-band {
-  background: #ede8dc;
-  border-left: 3px solid #2c3e3a;
-  padding: 16px 20px;
-  margin: 32px 0;
-  font-style: italic;
-  font-size: 15px;
-  color: #3a3a3a;
-  line-height: 1.6;
-  cursor: pointer;
-  user-select: none;
-}
-
-.tweet-band:hover {
-  background: #e6e0d2;
-}
-
 /* ── Book layout ── */
 .book-entry {
   display: flex;
@@ -239,7 +222,6 @@ body {
 /* ── Tweet band ── */
 .tweet-band {
   background: #ede8dc;
-  border-left: 3px solid #2c3e3a;
   padding: 14px 20px 14px 0;
   margin: 0 0 8px 0;
   display: flex;
