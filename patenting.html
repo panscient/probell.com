@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,6 +19,7 @@
       <li><a href="patenting.html" class="active">Patenting</a></li>
       <li><a href="about.html">About</a></li>
     </ul>
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">☀ Light</button>
   </div>
 
   <div class="content">
@@ -27,36 +28,11 @@
 
     <p>I spent 12 years managing patent portfolios in-house for a semiconductor IP company and an AI software company. I also hosted the Discussion of Patents meetup for startups for 10 years. This page answers the top questions I get from inventor-entrepreneurs.</p>
 
-    <h2>CONTENTS</h2>
-    <div class="toc">
-      <ul>
-        <li><a href="#why-patents">Why you might want patents?</a></li>
-        <li><a href="#dont-patent-product">Don't patent your product</a></li>
-        <li><a href="#why-patent-system">Why we have a patent system?</a></li>
-        <li><a href="#what-is-patentable">What kinds of ideas are patentable?</a></li>
-        <li><a href="#software">Is software patentable?</a></li>
-        <li><a href="#when-to-apply">When do I need to apply for a patent?</a></li>
-        <li><a href="#who-owns">Who owns my patent?</a></li>
-        <li><a href="#choosing-attorney">Choosing a patent attorney</a></li>
-        <li><a href="#what-matters">What matters</a></li>
-        <li><a href="#what-doesnt-matter">What doesn't matter</a></li>
-        <li><a href="#aligning-interests">Aligning interests</a></li>
-        <li><a href="#cost">How much $$$ does patenting cost?</a></li>
-        <li><a href="#how-long">How long does it take to get a patent?</a></li>
-        <li><a href="#worth-it">Is patenting worth the money?</a></li>
-        <li><a href="#do-patents-block">Do patents really block competitors or do they cheat?</a></li>
-        <li><a href="#defend">How difficult, expensive, and effective is it to defend a market using a patent?</a></li>
-        <li><a href="#get-around">If a competitor has a patent, is it difficult to get around it?</a></li>
-        <li><a href="#free-advice">How to get advice without paying for it?</a></li>
-        <li><a href="#inventors">Who should be named as inventors on a patent?</a></li>
-        <li><a href="#lawyer-steal">Can a patent lawyer steal my idea?</a></li>
-        <li><a href="#investor-steal">Can an investor steal my idea?</a></li>
-        <li><a href="#own-patent">Can I get a patent for myself if I work for a company?</a></li>
-        <li><a href="#laws">Where to look up laws</a></li>
-      </ul>
-    </div>
-
-    <h2 id="why-patents">Why you might want patents?</h2>
+    <div class="collapsible-section">
+      <button class="collapsible-btn" aria-expanded="false" aria-controls="sec-why-patents">
+        <span>Why you might want patents?</span><span class="collapsible-chevron">▼</span>
+      </button>
+      <div class="collapsible-body" id="sec-why-patents" hidden>
     <p>These are the main things startups and small companies do with patents.</p>
     <ul>
       <li>Signal innovation to investors</li>
@@ -64,13 +40,25 @@
       <li>Create a licensing revenue stream</li>
       <li>Have motivational wall covering</li>
     </ul>
+      </div>
+    </div>
 
-    <h2 id="dont-patent-product">Don't patent your product</h2>
+    <div class="collapsible-section">
+      <button class="collapsible-btn" aria-expanded="false" aria-controls="sec-dont-patent-product">
+        <span>Don't patent your product</span><span class="collapsible-chevron">▼</span>
+      </button>
+      <div class="collapsible-body" id="sec-dont-patent-product" hidden>
     <p>This is important. A patent gives its owner the right to block or give permission for others to implement a claimed invention. A patent does not give its owner the right to provide products with the claimed invention. Read those sentences again carefully to understand the difference.</p>
     <p>The patents you own can block your competitor, and other patents that your competitor owns can block you. For example, if Alice invents wheels and Bob invents wheels with gears attached then Bob can block Alice from selling wheels with gears, but Bob is unfortunate. Alice can block Bob from selling any kind of wheels.</p>
     <p>Your patents should claim what other people might want to sell in the future. That might cover your product. It could be something different. A good patent covers more details and variations than you have in your products. This requires brainstorming when preparing the patent application.</p>
+      </div>
+    </div>
 
-    <h2 id="why-patent-system">Why we have a patent system?</h2>
+    <div class="collapsible-section">
+      <button class="collapsible-btn" aria-expanded="false" aria-controls="sec-why-patent-system">
+        <span>Why we have a patent system?</span><span class="collapsible-chevron">▼</span>
+      </button>
+      <div class="collapsible-body" id="sec-why-patent-system" hidden>
     <p>You can deduce the answers to many questions about patents by remembering why we have a patent system.</p>
     <p>Every powerful country in the world has its own patent system. They are all based on the same principles. Patents are a deal between inventors and the public. The inventor teaches the public about an invention, and, in exchange, the public allows the inventor to control who can implement the invention for a period of years (20 years for the most common type of invention in most countries).</p>
     <p>By controlling who can implement the invention, a patent owner controls a monopoly. They can charge any price they want to maximize their profits.</p>
@@ -79,8 +67,14 @@
       <li>The ability to maximize profit creates an incentive for investors to invest the money needed for expensive research projects that might benefit the public.</li>
       <li>Knowledge is shared. In the far future, the public can use the knowledge for free. In the near future, other inventors might be able to invent improvements.</li>
     </ul>
+      </div>
+    </div>
 
-    <h2 id="what-is-patentable">What kinds of ideas are patentable?</h2>
+    <div class="collapsible-section">
+      <button class="collapsible-btn" aria-expanded="false" aria-controls="sec-what-is-patentable">
+        <span>What kinds of ideas are patentable?</span><span class="collapsible-chevron">▼</span>
+      </button>
+      <div class="collapsible-body" id="sec-what-is-patentable" hidden>
     <p><a href="https://www.law.cornell.edu/uscode/text/35/101" target="_blank">US law 35 USC 101</a>, <a href="https://new.epo.org/en/legal/epc/2020/a52.html" target="_blank">European Patent Convention Article 52</a>, <a href="https://www.natlawreview.com/article/china-s-national-people-s-congress-releases-translation-amended-patent-law" target="_blank">China patent law Article 25</a>, <a href="https://www.japaneselawtranslation.go.jp/en/laws/view/4097" target="_blank">Japan patent law Article 2</a>, and <a href="https://www.kipo.go.kr/upload/en/download/PatentAct.pdf" target="_blank">Korean patent law Article 2</a> are interpreted by courts as saying that inventions that are merely non-technical, abstract ideas are not eligible for patenting. Another general principal is that anything that could prevent doctors from treating patients or prevent people from managing their money are not patent eligible.</p>
     <p>In practice, this means that inventions in these general realms require special attention when deciding whether to pursue a patent and how to write claims for.</p>
     <ul>
@@ -91,11 +85,23 @@
     </ul>
     <p>It might be possible to receive and enforce patents if there is a specific, technical features and the patent claim on it describes elements with specificity, not merely by the results that can be achieved using the invention.</p>
     <p>For patenting inventions in those realms, it is especially important to work with a patent professional who (a) studies the relevant court cases carefully and (b) has a lot of experience in the realm of the invention at hand.</p>
+      </div>
+    </div>
 
-    <h2 id="software">Is software patentable?</h2>
+    <div class="collapsible-section">
+      <button class="collapsible-btn" aria-expanded="false" aria-controls="sec-software">
+        <span>Is software patentable?</span><span class="collapsible-chevron">▼</span>
+      </button>
+      <div class="collapsible-body" id="sec-software" hidden>
     <p>See the section above.</p>
+      </div>
+    </div>
 
-    <h2 id="when-to-apply">When do I need to apply for a patent?</h2>
+    <div class="collapsible-section">
+      <button class="collapsible-btn" aria-expanded="false" aria-controls="sec-when-to-apply">
+        <span>When do I need to apply for a patent?</span><span class="collapsible-chevron">▼</span>
+      </button>
+      <div class="collapsible-body" id="sec-when-to-apply" hidden>
     <p>The short answer is that you should to apply for a patent before you bring your ideas to the public or you will lose rights forever.</p>
     <p>If you want to patent your invention outside the US, file an application in any patent office (US or other) before allowing the invention to become publicly known.</p>
     <p>If you want to patent your invention inside the US, file an application in any patent office (US or other) within 1 year of the invention becoming publicly known and within 1 year of first offering to sell a product or service that implements the invention to anybody (even if the offer is under NDA and the sale does not complete).</p>
@@ -103,8 +109,14 @@
     <p>Remember that patenting an invention means that it will eventually become publicly known. If you want to keep the invention secret, the deadline for filing for a patent is the day before somebody else discovers the same invention and applies for a patent or makes the invention known.</p>
     <p>After filing an application in any country's patent office, if you would like patents in any other country, within 1 year you must either file in all of the other target countries or, to cover countries that are signatories to the Patent Cooperation Treaty, you must file a PCT application within 1 year.</p>
     <p>Patenting has a lot of complicated requirements around dates and deadlines. You should work with a professional to avoid screwing up and losing rights.</p>
+      </div>
+    </div>
 
-    <h2 id="who-owns">Who owns my patent?</h2>
+    <div class="collapsible-section">
+      <button class="collapsible-btn" aria-expanded="false" aria-controls="sec-who-owns">
+        <span>Who owns my patent?</span><span class="collapsible-chevron">▼</span>
+      </button>
+      <div class="collapsible-body" id="sec-who-owns" hidden>
     <p>Patents can be very valuable. It avoids confusion and disputes if it is clear who owns each one.</p>
     <p>Many/most countries patent systems envision inventors working for an employer who pays for their living. When an application is filed or a patent is granted, it is owned by the employer. Those patent systems have to deal with exceptions and grey areas such as (a) things invented by somebody who has two jobs, (b) inventions by people whose job description doesn't require them to invent for the employer, and (c) inventions that are not applicable to the employer's line of business. One way some countries address this is by requiring the employer filing for a patent to pay a bonus to the inventors for each invention to make it clear that the company owns the rights. For this reason, it is a good idea for startups with global patenting ambitions to pay some reasonably large bonuses to inventors for each invention, no matter where the inventors live.</p>
     <p>The US is different from those other countries. <a href="https://constitution.congress.gov/browse/article-1/section-8/clause-8/" target="_blank">Article 1, section 8, clause 8</a> of the US constitution is interpreted as granting patent rights to inventors, regardless of who, if anybody, pays them. Therefore, for a company to own the rights to a US patent or application, it must have the inventors assign the rights to the company. This is best done with a good assignment agreement template, signed for each time the first patent application is filed describing an invention. It is a good backup plan to have employment agreements between each employee (including the founders and executives) and the company. The employment agreement should have template language giving the company the rights to some reasonable range of inventions, such as ones within the company's foreseeable line of business.</p>
@@ -112,8 +124,14 @@
     <p>Not owning or having exclusive rights to its patents is one of the most common, expensive, and devastating patenting mistakes startups make!!!</p>
     <p>Fixing patent assignment problems is usually simple and inexpensive to do if detected early. After an inventor leaves the company, it gets more difficult and expensive. Fixing assignments in response to due diligence can be even more expensive and slow down an acquisition, IPO, or vital financing. If nobody notices the problem until planning to enforce the patent rights, it can cost the company dearly.</p>
     <p>US law makes it very important to record the assignment agreements for US patents in the public USPTO assignments database. Savvy investors will check. Get assignments taken care of early to avoid expensive problems later.</p>
+      </div>
+    </div>
 
-    <h2 id="choosing-attorney">Choosing a patent attorney</h2>
+    <div class="collapsible-section">
+      <button class="collapsible-btn" aria-expanded="false" aria-controls="sec-choosing-attorney">
+        <span>Choosing a patent attorney</span><span class="collapsible-chevron">▼</span>
+      </button>
+      <div class="collapsible-body" id="sec-choosing-attorney" hidden>
     <p>Patent lawyers are one of the most highly paid types of lawyer. Unfortunately, there is no Yelp! for lawyers. It's difficult to know who to choose.</p>
     <p>When you are choosing the patent attorney to work with, some things matter and some don't.</p>
 
@@ -167,31 +185,55 @@
       <li><p>A carrot.<br>The startup pays the attorney in equity. This way, the attorney has an interest in getting a strong, valuable patent so that the value of the stock won't be greatly harmed by a patent failure. An alternative is pay in installments stretching out over many years. Unfortunately, there are many reasons, beyond an attorney's control, that a startup can fail. So, very few attorneys accept equity compensation or installment payments.</p></li>
       <li><p>A stick.<br>The attorney provides a warranty that a patent claim is valid. If the warrantied claim is held invalid in court or a post-grant challenge, the attorney pays the startup 10x what the startup paid to get the patent. Entrepreneurs are masters of risk-reward trade-offs. Attorneys are trained to avoid all possible risk. Therefore, good attorneys don't want to provide a warranty on their work. Because the guild keeps attorneys scarce, they don't have to.</p></li>
     </ol>
+      </div>
+    </div>
 
-    <h2 id="cost">How much $$$ does patenting cost?</h2>
+    <div class="collapsible-section">
+      <button class="collapsible-btn" aria-expanded="false" aria-controls="sec-cost">
+        <span>How much $$$ does patenting cost?</span><span class="collapsible-chevron">▼</span>
+      </button>
+      <div class="collapsible-body" id="sec-cost" hidden>
     <p>It depends.</p>
     <p>Attorneys cannot feed their families with stock in high-risk illiquid startup companies. They almost all require money. This leaves their interests unaligned with the company. Startups are cash-poor clients with little recurring business. The best attorneys don't take startups as clients. There are 100 possible mistakes inexperienced attorneys can make to fatally harm patents. Startups must be especially careful in choosing their patent attorney and then not be cheap about paying for quality work.</p>
     <p>As a very rough estimate of cash costs of patenting expect to spend around $10k-15k USD soon to get on file, then another $5k for each additional country, then another $10k (per country) to get the application to grant.</p>
     <p>Below are some ranges of reasonable cash rates for different kinds of patenting projects.</p>
     <p>When you get quotes, be clear about what project the attorney is describing. Be wary of the quality of work of anybody offering to do these kinds of projects for lower rates. Carefully question anybody charging much higher rates. Some cases really do require higher rates. Biological inventions tend to be more specialized. Extra time and cost is needed for especially complicated inventions. Your preparation and behavior also matter. If you provide your attorney too little or too much or poorly formatted information or if you add material to the project while the work is in progress, that will increase costs.</p>
+      </div>
+    </div>
 
-    <h2 id="how-long">How long does it take to get a patent?</h2>
+    <div class="collapsible-section">
+      <button class="collapsible-btn" aria-expanded="false" aria-controls="sec-how-long">
+        <span>How long does it take to get a patent?</span><span class="collapsible-chevron">▼</span>
+      </button>
+      <div class="collapsible-body" id="sec-how-long" hidden>
     <p>You can decide.</p>
     <p>Government agencies are slow. As a rule of thumb, imagine 3 years from filing to grant.</p>
     <p>If somebody else will start making money by implementing your invention soon, you can ask the patent office to accelerate your application. In some offices, such as Europe and Japan, that's free. In the US, it requires a hefty fee.</p>
     <p>Accelerating an application gives the attorney their next billable bite of your budget sooner. Some attorneys recommend accelerating unnecessarily. Your invention is, by definition, new. It is unusual that somebody else would discover the same invention and start making money from it much faster than the patent office gets around to processing your application.</p>
     <p>In some ways, a pending application is more valuable than a granted patent. This is because patent claims usually change in examination. While the application is pending, nobody knows for sure what the final claims will be. The uncertainty to competitors is valuable to you. There is more uncertainty in high tech than in life science patents.</p>
     <p>If you want to slow down the process to stretch the budget, you can request a 3 year deferral of the initial examination in the US and 4 or 5 years in some other countries.</p>
+      </div>
+    </div>
 
-    <h2 id="worth-it">Is patenting worth the money?</h2>
+    <div class="collapsible-section">
+      <button class="collapsible-btn" aria-expanded="false" aria-controls="sec-worth-it">
+        <span>Is patenting worth the money?</span><span class="collapsible-chevron">▼</span>
+      </button>
+      <div class="collapsible-body" id="sec-worth-it" hidden>
     <p>This requires a CTO technical analysis and CEO business calculation. It requires answering 3 questions.</p>
     <ol>
       <li><p>What is actually patentable?<br>You need to figure out what is the broadest valid claim that you can patent in view of the prior art. A professional prior art searcher (who is usually less expensive than an attorney) might be able to help, but you can probably get a good idea yourself by searching <a href="https://patents.google.com/" target="_blank">Google Patents</a>, <a href="https://scholar.google.com/" target="_blank">Google Scholar</a>, or <a href="https://duckduckgo.com/" target="_blank">the internet</a>. It is easy to overestimate the scope of what about your invention is truly different from other known things. That leads to wasting money chasing unpatentable claims. A diligent and dispassionate prior art search is important.</p></li>
       <li><p>How much is it worth?<br>You can only block others from implementing what you claim. That is probably a small sub market of the market you expect to obtain with your products. It's just the products that have every feature in the claim. If you invent a bike with a lever that can both operate the brakes and shift gears, how much more would people pay for such a bike than a bike with separate brake and shift levers? A lot of people don't care about the convenience of having one lever for both functions. Being accurate about estimating the increase in market value is important to avoid wasting money.</p></li>
       <li><p>What is the opportunity cost?<br>If you didn't apply for a patent, what would you do with the money? Hire another scientist or engineer to improve the product? Run a new ad campaign to get more customers? Patenting is only worth the money if the value of its market potential is greater than the value of whatever you could do with the money if you didn't apply for a patent.</p></li>
     </ol>
+      </div>
+    </div>
 
-    <h2 id="do-patents-block">Do patents really block competitors or do they cheat?</h2>
+    <div class="collapsible-section">
+      <button class="collapsible-btn" aria-expanded="false" aria-controls="sec-do-patents-block">
+        <span>Do patents really block competitors or do they cheat?</span><span class="collapsible-chevron">▼</span>
+      </button>
+      <div class="collapsible-body" id="sec-do-patents-block" hidden>
     <p>There are two ways to make money with patents.</p>
     <ul>
       <li>Blocking competitors so that you can charge a monopoly price without competition</li>
@@ -201,15 +243,27 @@
     <p>In general, competitors avoid infringing patents for technologies in which products are covered by one or a small number of patents such as pharmaceuticals, chemicals, and simple devices. On the other hand, complex devices and computer-implemented products have so many features that they likely infringe thousands of patents. Makers of such products tend to ignore patents when designing and selling their products. Patent owners must approach and ask the makers to stop or file a lawsuit to ask a court to step in.</p>
     <p>The courts in some countries, such as Germany and China are more likely to block the sale of infringing products, even for complex products. In contrast, courts in the United States rarely block the sale of complex products. Instead they force the maker of the infringing product to pay a royalty as if they had licensed the patent rights for the patent owner.</p>
     <p>Unfortunately for the owners of patents on complex products in the United States, they probably cannot block a competitor with patents. If the patents are strong, they can probably get a royalty payment. Weak patents tend to be practically worthless. That is why it is so important to have the help of a capable and motivated patent attorney.</p>
+      </div>
+    </div>
 
-    <h2 id="defend">How difficult, expensive, and effective is it to defend a market using a patent?</h2>
+    <div class="collapsible-section">
+      <button class="collapsible-btn" aria-expanded="false" aria-controls="sec-defend">
+        <span>How difficult, expensive, and effective is it to defend a market using a patent?</span><span class="collapsible-chevron">▼</span>
+      </button>
+      <div class="collapsible-body" id="sec-defend" hidden>
     <p>With a strong patent and a friendly approach, it might be possible to keep a competitor out of the market for products that implement the patent with just a letter and a few emails and phone calls. A few thousands dollars of help from an attorney might help.</p>
     <p>If that fails, you might at least negotiate to license out the patent rights to the competitor for a royalty.</p>
     <p>If a competitor holds out and will not negotiate, it might be necessary to file a lawsuit. A lawsuit filed by a prompt settlement agreement costs tens of thousands of dollars.</p>
     <p>If it is necessary to go all the way through a trial and court ruling, it would typically costs hundreds of thousands of dollars in most other countries, but millions of dollars in the US.</p>
     <p>There are millions of patents, tens of thousands of patent-related agreements between companies each year, and only a few hundreds that go through a full US court trial. It is worth considering the high potential cost of enforcing US patents, but it is also important to consider the low probability of having to go through that.</p>
+      </div>
+    </div>
 
-    <h2 id="get-around">If a competitor has a patent, is it difficult to get around it?</h2>
+    <div class="collapsible-section">
+      <button class="collapsible-btn" aria-expanded="false" aria-controls="sec-get-around">
+        <span>If a competitor has a patent, is it difficult to get around it?</span><span class="collapsible-chevron">▼</span>
+      </button>
+      <div class="collapsible-body" id="sec-get-around" hidden>
     <p>This depends on the strength and scope of the patent's claims and the country and field of the patent's technology.</p>
     <ul>
       <li>Strength - If the competitor's patent is weak, it would not stand up to a review challenge at the patent office. You can probably use the technology in the patent claims without much concern.</li>
@@ -221,10 +275,15 @@
       <li>In the US, if you are making or selling products that can be covered by just one or a small number of patents, such as pharmaceuticals, chemicals, or simple mechanical devices, you are at significant risk of being blocked by competitors' patents. Companies in those businesses would be wise to do a patent landscape analysis before entering the market to avoid being blocked.</li>
       <li>In other countries such as China and Germany, it is more common to be completely blocked by competitors' patents. It is important to have some leverage, such as your own patents covering their products or be willing to negotiate permission and pay royalties.</li>
     </ul>
+      </div>
+    </div>
 
-    <h2 id="free-advice">How to get advice without paying for it?</h2>
+    <div class="collapsible-section">
+      <button class="collapsible-btn" aria-expanded="false" aria-controls="sec-free-advice">
+        <span>How to get advice without paying for it?</span><span class="collapsible-chevron">▼</span>
+      </button>
+      <div class="collapsible-body" id="sec-free-advice" hidden>
     <p>To get free general education, read this web page. You might also find helpful information on <a href="https://www.quora.com/topic/Patents" target="_blank">Quora</a>, <a href="https://www.reddit.com/r/Patents/" target="_blank">Reddit</a>, or <a href="https://patents.stackexchange.com/" target="_blank">StackExchange</a>.</p>
-    <p>If you still have a question, email <a href="/cdn-cgi/l/email-protection#1a6a7b6e7f746e695a6a6875787f767634797577"><span class="__cf_email__" data-cfemail="4f3f2e3b2a213b3c0f3f3d202d2a2323612c2022">[email&#160;protected]</span></a>.</p>
     <p>If you want advice that is specific to your invention and business situation, you will not find reliable advice for free.</p>
     <p>Most major countries' patent offices are happy to do outreach. You can call your country's patent office. However</p>
     <ol>
@@ -239,31 +298,61 @@
       <li>They have no experience with your business, markets, or competitive landscape</li>
     </ol>
     <p>So, get all the general education you need for free, then pay for an experienced patent attorney or agent that passes the tests in the section of this web page about choosing a patent attorney.</p>
+      </div>
+    </div>
 
-    <h2 id="inventors">Who should be named as inventors on a patent?</h2>
+    <div class="collapsible-section">
+      <button class="collapsible-btn" aria-expanded="false" aria-controls="sec-inventors">
+        <span>Who should be named as inventors on a patent?</span><span class="collapsible-chevron">▼</span>
+      </button>
+      <div class="collapsible-body" id="sec-inventors" hidden>
     <p>This is tricky and easy to get wrong. Getting it wrong can make some patents unenforceable and therefore essentially worthless.</p>
     <p>In most countries, patents are granted to and owned by the employer of the inventors. In the US, patents are granted to the inventors who (usually) sell their rights to their employer in exchange for their salary and (maybe) a bonus. Patents are (potentially) very valuable pieces of property. It would be wrong to deny patent rights to a true inventor by leaving off their name.</p>
     <p>Leaving off the name of a true inventor destroys a patent, making it unenforceable and potentially worthless.</p>
     <p>It would also be wrong to give rights to valuable patent property to somebody who is not a true inventor. On academic publications, it is common to name long lists of co-authors who contributed in any way. However, patents should only name people who contributed to figuring out how the claimed invention works. Patents should not name somebody who implemented the invention (wrote code, setup the fabrication process, did the lab bench work, etc.) if that person did not contribute to thinking of the invention. Also, patents should not name somebody who identified the problem or assigned the inventors to the task (boss, project manager, market researcher, etc.) if that person did not contribute to thinking of how the invention works.</p>
     <p>It is very common in startups that a co-inventor leaves the company before the patent application is filed. Sometimes, the remaining inventors don't want to talk with the inventor who left. That is okay. Unfortunately, it is common that such startups leave off the name of the inventor who left. That is not okay. It can destroy an otherwise valuable patent. It is important to work out an arrangement with the departed inventor early rather than lose the patent protection after building a successful business around it. An attorney can usually help to negotiate with the departed inventor.</p>
+      </div>
+    </div>
 
-    <h2 id="lawyer-steal">Can a patent lawyer steal my idea?</h2>
+    <div class="collapsible-section">
+      <button class="collapsible-btn" aria-expanded="false" aria-controls="sec-lawyer-steal">
+        <span>Can a patent lawyer steal my idea?</span><span class="collapsible-chevron">▼</span>
+      </button>
+      <div class="collapsible-body" id="sec-lawyer-steal" hidden>
     <p>If a patent lawyer steals your idea, you can cause them to lose their license, face professional discipline, and potentially be disbarred. Since they learned the idea from you, they are not an inventor so they could not get a patent for themselves, nor could anybody else they tell the idea to. It is highly unlikely that a patent attorney or agent would give up their profession and get nothing of value from it by stealing your idea.</p>
     <p>If somebody claims to be a US patent attorney or agent, you can check with a <a href="https://oedci.uspto.gov/OEDCI/practitionerSearchEntry" target="_blank">Practitioner search at the USPTO Office of Enrollment and Discipline</a>.</p>
+      </div>
+    </div>
 
-    <h2 id="investor-steal">Can an investor steal my idea?</h2>
+    <div class="collapsible-section">
+      <button class="collapsible-btn" aria-expanded="false" aria-controls="sec-investor-steal">
+        <span>Can an investor steal my idea?</span><span class="collapsible-chevron">▼</span>
+      </button>
+      <div class="collapsible-body" id="sec-investor-steal" hidden>
     <p>They could, but they probably wouldn't. They could not get a valid patent on the idea since you are the inventor and they only learned the idea from you. They would be starting a business without the background domain knowledge that helped you invent the idea, and they would be behind on any development work that you did before telling the investor the idea.</p>
     <p>An investor could give your idea to another company they invest in. But, if they did, that company probably wouldn't take it. Most companies have their own product development plan and aren't going to redesign their product because an investor has an idea.</p>
     <p>In any case, since you are the inventor, you can get a valid patent, and nobody who learned it from you could can. It would be a waste of their time to try to build a business on your patented idea.</p>
+      </div>
+    </div>
 
-    <h2 id="own-patent">Can I get a patent for myself if I work for a company?</h2>
+    <div class="collapsible-section">
+      <button class="collapsible-btn" aria-expanded="false" aria-controls="sec-own-patent">
+        <span>Can I get a patent for myself if I work for a company?</span><span class="collapsible-chevron">▼</span>
+      </button>
+      <div class="collapsible-body" id="sec-own-patent" hidden>
     <p>Most employees sign employment agreements that give the products of their work to their employer in exchange for the company paying a salary. That's pretty reasonable. If you start a startup, you should have everybody sign such agreements.</p>
     <p>Inventions can be a product of an employee's work. Most such agreements include giving the employer the rights to inventions that the employee makes. Depending on the country or state, the job description, where and when the employee conceived their invention, and how closely the invention relates to the employer's business, the employer might own the patent or trade secret invention rights.</p>
     <p>If you are planning to start a startup, it is ideal to quit your old job before inventing ideas for the startup. If your invention is in your employer's line of business, and especially if you invented it as part of your usual work, it is likely that the employer can claim the invention rights. If you feel like your invention is not something your employer would pursue for their business, you still might want to meet with somebody friendly in the legal department or the executive team and ask them to agree in write (even just an email to your personal email address) that the company makes no claim to the rights to your invention.</p>
     <p>For example, if you work for a database software company and you invent a better can opener, it is likely that you can start a new company and own the invention rights. If you work for a database software company and invent a better way to access APIs, there is a higher likelihood that the company would feel that it should own the invention rights.</p>
     <p>What you should NOT do is start a startup based on an invention that the employer might feel that it should own. Probably nobody would notice or care for a long time. But you might find that when your startup becomes very successful, the old employer will claim ownership, causing the startup to fail or at least have an expensive lawsuit.</p>
+      </div>
+    </div>
 
-    <h2 id="laws">Where to look up laws</h2>
+    <div class="collapsible-section">
+      <button class="collapsible-btn" aria-expanded="false" aria-controls="sec-laws">
+        <span>Where to look up laws</span><span class="collapsible-chevron">▼</span>
+      </button>
+      <div class="collapsible-body" id="sec-laws" hidden>
     <p>If you can read and think and you have enough time, you can actually look up all the laws yourself without a lawyer. Most countries publish their laws online. You can look up all the US federal laws statutory laws made by Congress here.</p>
     <p><a href="https://www.law.cornell.edu/uscode/text/" target="_blank">https://www.law.cornell.edu/uscode/text/</a></p>
     <p>US Patent laws are in Title 35.</p>
@@ -271,7 +360,43 @@
     <p><a href="https://scholar.google.com/scholar?as_sdt=6" target="_blank">https://scholar.google.com/scholar?as_sdt=6</a></p>
 
     <p>By searching the internet, you can find the laws of the US states, other countries, cities, government regulations, and most other stuff that people pay lawyers to look up. If you have time, save yourself some money, and do your own legal research.</p>
+      </div>
+    </div>
 
-  </div>
+
+</div>
+
+  <script>
+    (function () {
+      document.querySelectorAll('.collapsible-btn').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var body = document.getElementById(btn.getAttribute('aria-controls'));
+          var expanded = btn.getAttribute('aria-expanded') === 'true';
+          btn.setAttribute('aria-expanded', !expanded);
+          btn.querySelector('.collapsible-chevron').textContent = expanded ? '▼' : '▲';
+          if (expanded) { body.setAttribute('hidden', ''); }
+          else { body.removeAttribute('hidden'); }
+        });
+      });
+    })();
+  </script>
+
+  <script>
+    // ── Dark mode ──
+    (function () {
+      var html = document.documentElement;
+      var btn  = document.getElementById('theme-toggle');
+      var stored = localStorage.getItem('theme') || 'light';
+      html.setAttribute('data-theme', stored);
+      btn.textContent = stored === 'dark' ? '☀ Light' : '◑ Dark';
+      btn.addEventListener('click', function () {
+        var current = html.getAttribute('data-theme');
+        var next = current === 'dark' ? 'light' : 'dark';
+        html.setAttribute('data-theme', next);
+        btn.textContent = next === 'dark' ? '☀ Light' : '◑ Dark';
+        localStorage.setItem('theme', next);
+      });
+    })();
+  </script>
 </body>
 </html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,6 +19,7 @@
       <li><a href="patenting.html">Patenting</a></li>
       <li><a href="about.html" class="active">About</a></li>
     </ul>
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">☀ Light</button>
   </div>
 
   <div class="content">
@@ -32,22 +33,68 @@
     <p>I began my career as a chip designer and later became a software patent expert. I just love startups. I co-founded two and worked for five others. Two went public. But the world was changing. The chip business was dominated by a few large companies. The software business was commoditizing. My credibility wasn't in the next big thing. So I became an investor.</p>
     <p>I paused to study the history of humanity's compounding development of technologies. Language, barter, specialization, metals, mechanical devices, carbon fuels, electricity, radio, space. I have lived through four important compounding waves.</p>
 
-    <ol>
-      <li>Chips and computers</li>
-      <li>The Internet</li>
-      <li>Mobile devices + cloud storage</li>
-      <li>Large statistical models ("AI")</li>
-    </ol>
+    <div class="tech-timeline">
+      <div class="tl-item" data-year="1970s–90s">
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <span class="tl-label">Chips &amp; computers</span>
+        </div>
+      </div>
+      <div class="tl-item" data-year="1990s–2000s">
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <span class="tl-label">The Internet</span>
+        </div>
+      </div>
+      <div class="tl-item" data-year="2000s–2010s">
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <span class="tl-label">Mobile devices + cloud storage</span>
+        </div>
+      </div>
+      <div class="tl-item" data-year="2010s–2020s">
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <span class="tl-label">Large statistical models (&ldquo;AI&rdquo;)</span>
+        </div>
+      </div>
+      <div class="tl-item tl-next" data-year="Now →">
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <span class="tl-label">Genetic engineering</span>
+        </div>
+      </div>
+    </div>
 
-    <p>Most thinkers on the subject forecast that the next tech wave will be in the engineering of living things. That includes, people, plants, and microbes. Genetic engineering. It will be applied to these purposes.</p>
+    <div class="stat-row">
+      <div class="stat-box">
+        <span class="stat-num" data-target="25">0</span>
+        <span class="stat-label">years in tech</span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-num" data-target="7">0</span>
+        <span class="stat-label">startups</span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-num" data-target="2">0</span>
+        <span class="stat-label">IPOs</span>
+      </div>
+      <div class="stat-box">
+        <span class="stat-num" data-target="16">0</span>
+        <span class="stat-label">patents granted</span>
+      </div>
+    </div>
+
+        <p>Most thinkers on the subject forecast that the next tech wave will be in the engineering of living things. That includes, people, plants, and microbes. Genetic engineering. It will be applied to these purposes.</p>
 
     <ul>
-      <li>Cures for the worst and most expensive diseases such as cancer, Alzheimer's disease, heart disease, diabetes, and children's genetic diseases</li>
+      <li>Cures for the worst and most expensive diseases such as cancer, Alzheimer’s disease, heart disease, diabetes, and children’s genetic diseases</li>
       <li>Safe vaccines against deadly and disruptive diseases</li>
       <li>Early diagnosis of diseases so that they can be cured without suffering</li>
       <li>Plants that provide healthier food in places where it is needed to prevent famines in a changing global climate</li>
-      <li>Biomanufacturing of products and procurement of resources that improve the quality of people's lives</li>
+      <li>Biomanufacturing of products and procurement of resources that improve the quality of people’s lives</li>
     </ul>
+
 
     <p>There are already thousands of genetic engineering startup companies working magic. The greatest constraint on bringing their innovations to the world is the amount of money being invested in genetic engineering startups.</p>
     <p>My objective is to ensure that mine and my investing partners' money is invested in the ones with the greatest chance of creating the greatest value to people. I am proud to work, constantly, to do that.</p>
@@ -65,58 +112,173 @@
 
     <p>Here is a list of some things that I have written. You can also search for me on <a href="https://scholar.google.com/scholar?q=Jonah+Probell" target="_blank">Google Scholar</a> and <a href="https://patents.google.com/?inventor=Jonah+Probell&num=100&sort=new" target="_blank">Google Patents</a>. Lately, I have found tweeting to be a more efficient format for writing.</p>
 
-    <ul>
-      <li><a href="https://arxiv.org/pdf/2010.02748" target="_blank">Neural Generation of Blocks for Video Coding</a> paper <a href="https://arxiv.org/abs/2010.02748" target="_blank">arXiv</a> 2020</li>
-      <li><a href="http://www.tokugikon.jp/gikonshi/287/287tokusyu5e.pdf" target="_blank">中小テック企業の特許取得戦略 −シリコンバレーの特許専門家が思う　日常業務の押さえどころ</a> article <a href="http://www.tokugikon.jp/gikonshi/287/287tokusyu5e.pdf" target="_blank">Tokugikon</a> 2017</li>
-      <li><a href="https://www.amazon.com/Patenting-Small-Company-Jonah-Probell/dp/1542841445" target="_blank">Patenting for the Small Company – Third Edition</a> book <a href="https://www.amazon.com/Patenting-Small-Company-Jonah-Probell/dp/1542841445" target="_blank">Amazon</a> 2017</li>
-      <li><a href="pubs/Floorplanning%20for%20NoC.pdf" target="_blank">The Rubber Jigsaw Puzzle: Floorplanning for Network-on-chip</a> conference paper SNUG 2015</li>
-      <li><a href="https://www.edn.com/slash-soc-power-consumption-in-the-interconnect/" target="_blank">Slash SoC power consumption in the interconnect</a> magazine article EDN 2014</li>
-      <li><a href="pubs/Midpoint%20at%20237%20City%20Council%20Packet.pdf" target="_blank">Midpoint at 237 City Council Packet</a> letter to city council San Jose city planning department 2014</li>
-      <li><a href="pubs/Demand-Based%20Scheduling.pdf" target="_blank">Demand-based Scheduling using NoC Probes</a> conference paper unpublished 2013</li>
-      <li><a href="pubs/Endianness.pdf" target="_blank">Endianness</a> technical brief unpublished</li>
-      <li><a href="pubs/Power%20and%20Area%20Benefits%20of%20Modular%20Interconnect%20Design.pdf" target="_blank">Power and Area Benefits of Modular Interconnect Design</a> white paper Arteris web site 2012</li>
-      <li><a href="pubs/Critical%20word%20first%20or%20Sequential%20cache%20miss%20refill%20policy.pdf" target="_blank">Critical word first or Sequential cache miss refill policy</a> white paper unpublished 2011</li>
-      <li><a href="pubs/The%20Growing%20Cost%20of%20Wires.pdf" target="_blank">The Growing Cost of Wires</a> white paper <a href="http://www.armtechcon.com/" target="_blank">ARM Technology Conference</a> 2010</li>
-      <li><a href="pubs/NoC%20Advantages%20for%20FPGA%20Designs.pdf" target="_blank">NoC Advantages for SoC Prototyping on Big FPGA Boards</a> white paper <a href="http://www.arteris.com/" target="_blank">Arteris</a> 2010</li>
-      <li><a href="http://www.eetimes.com/design/signal-processing-dsp/4204764/The-conundrum-of-peer-to-peer-video-distribution" target="_blank">The Conundrum of Peer-to-Peer Video Distribution</a> long article <a href="http://www.eetimes.com/" target="_blank">EE Times</a> Signal Processing DesignLine 2010</li>
-      <li><a href="pubs/MIPS%20in%20Handsets.pdf" target="_blank">MIPS in Handsets – Why Not?</a> article <a href="http://www.eetimes.com/" target="_blank">EE Times</a> 2009</li>
-      <li><a href="http://www.eetimes.com/electronics-news/4085279/Counterpoint-Synergies-could-trigger-a-Synopsys-ARM-merger" target="_blank">Synergies could trigger a Synopsys-ARM merger</a> article <a href="http://www.eetimes.com/" target="_blank">EE Times</a> 2009</li>
-      <li><a href="pubs/Feedback-%206%20critical%20keys%20to%20IP%20licensing%20success.pdf" target="_blank">6 critical keys to IP licensing success</a> article <a href="http://www.eetimes.com/" target="_blank">EE Times</a> 2009</li>
-      <li><a href="http://www.eetimes.com/design/signal-processing-dsp/4017765/Processor-architecture-not-a-factor-for-low-power-mobile-systems" target="_blank">Processor architecture not a factor for low-power mobile systems</a> long article Embedded Systems Design 2009</li>
-      <li><a href="pubs/WhoKilledMyBattery.html" target="_blank">Who Killed My Battery?</a> short article DSP DesignLine 2009</li>
-      <li><a href="http://www.eetimes.com/design/signal-processing-dsp/4017727/Video-processing-pipeline-design" target="_blank">Video processing pipeline design</a> article EE Times DSP DesignLine 2008</li>
-      <li><a href="pubs/Differentiate_with_Video_Processing_Tensilica.pdf" target="_blank">A Designer's Guide to HD Video Pre- and Post-Processing</a> white paper Tensilica 2008</li>
-      <li><a href="pubs/Portable%20Design%20Conference%202008%20-%20Truly%20Understanding%20Low-Power%20Multimedia%20Chip%20Design%20r2.ppt" target="_blank">Truly Understanding Low-Power Multimedia Chip Design</a> conference presentation Portable Design Conference 2008</li>
-      <li><a href="pubs/video_frame_processing.pdf" target="_blank">Frame Processing Time Deviations in Video Processors</a> white paper Tensilica 2008</li>
-      <li><a href="http://w.on24.com/r.htm?e=94261&s=1&k=B376DEE20ACD32D059D88C7B55F5D2F0" target="_blank">Selecting Video IP for SOC Design: Ask the Tough Questions</a> webcast EDN 2007</li>
-      <li><a href="http://www.eetimes.com/electronics-news/4073699/Letter-to-the-editor-IP-pros-cons" target="_blank">Letter to the editor: IP pros, cons</a> magazine article EE Times 2007</li>
-      <li><a href="http://www.portabledesign.com/article?article_id=36" target="_blank">Minimizing Power Consumption in a Mobile Video Subsystem</a> magazine article Portable Design 2007</li>
-      <li><a href="pubs/A_Brief_History_of_Video_Coding_wp.pdf" target="_blank">A Brief History of Video Coding</a> white paper ARC 2007</li>
-      <li><a href="http://www.eetimes.com/design/signal-processing-dsp/4017472/Quick-tip-Memory-bandwidth-metrics-for-video-processing" target="_blank">Memory bandwidth metrics for video processing</a> magazine article DSP DesignLine</li>
-      <li><a href="pubs/GhostsOfVideoProcessors.html" target="_blank">Ghosts of Video Processors Past, Present, and Future</a> magazine article unpublished 2006</li>
-      <li><a href="http://www.eetimes.com/electronics-products/processors/4088520/ARCHITECTURES-Multimedia-platform-stresses-flexibility" target="_blank">ARCHITECTURES: Multimedia platform stresses flexibility</a> magazine article quotation EE Times 2006</li>
-      <li><a href="pubs/ARC%20IP%20for%20Multicore%20DSP-Processor%20SoCs.ppt" target="_blank">Integrating IP in Multicore DSP/Processor SoCs</a> conference panel Global Signal Processing Conference 2006</li>
-      <li><a href="pubs/System%20Design%20Tricks%20for%20Low-Power%20Video%20rev%202.ppt" target="_blank">System Design Tricks for Low-Power Video Processing</a> conference presentation Global Signal Processing Conference 2006</li>
-      <li><a href="pubs/ARC%20GSPx%202006%20Paper.pdf" target="_blank">System Design Tricks for Low-Power Video Processing</a> conference paper Global Signal Processing Conference 2006</li>
-      <li><a href="pubs/PCS2006JonahProbell.pdf" target="_blank">Architecture Considerations for Multi-Format Programmable Video Processors</a> journal article IEEE Journal of Signal Processing Systems for Signal, Image, and Video Technology 2006</li>
-      <li><a href="pubs/PCS2006JonahProbell.pdf" target="_blank">Architecture Considerations for Multi-Format Programmable Video Processors</a> conference paper Picture Coding Symposium 2006</li>
-      <li><a href="pubs/DesignCon2005_video_intro.pps" target="_blank">The Trade-Offs of Software Programmability in Video Processors</a> conference panel DesignCon 2005</li>
-      <li><a href="pubs/20060282588.pdf" target="_blank">Processor system that allows for simultaneous access by multiple requestors to a target with multiple ports</a> patent application US Patent &amp; Trademark Office 2005</li>
-      <li><a href="pubs/20060206695.pdf" target="_blank">Data movement within a processor</a> patent application US Patent &amp; Trademark Office 2005</li>
-      <li><a href="pubs/Predictions2005.pdf" target="_blank">Digital Video to Come Alive in 2005</a> magazine article TechOnLine 2004</li>
-      <li><a href="pubs/GSPx2004.pps" target="_blank">What Choices Make a Killer Video Processor Architecture (presentation slides)</a> conference presentation Global Signal Processing Conference 2004</li>
-      <li><a href="pubs/GSPx2004_audio.pps" target="_blank">What Choices Make a Killer Video Processor Architecture (presentation slides with audio narration)</a> conference presentation Global Signal Processing Conference 2004</li>
-      <li><a href="pubs/GSPx2004.pdf" target="_blank">What Choices Make a Killer Video Processor Architecture (published paper)</a> conference paper Global Signal Processing Conference 2004</li>
-      <li><a href="pubs/JP_TechOnLine_VidProc_v2.pdf" target="_blank">Processor Architecture for High Performance Video Decode</a> article Video/Imaging DesignLine 2004</li>
-      <li><a href="pubs/EPF_2004.pdf" target="_blank">The Ultra Data UD3000: A Next Generation Video Processor Core</a> conference presentation Embedded Processor Forum 2004</li>
-      <li><a href="pubs/DesignCon2004_Paper.pdf" target="_blank">Improving Application Performance with Instruction Set Architecture Extensions to Embedded Processors</a> conference paper DesignCon 2004</li>
-      <li><a href="pubs/lx5380_MPF_final.pdf" target="_blank">LX5380 RISC-DSP for New Internet Applications</a> conference presentation Microprocessor Forum 2001</li>
-      <li><a href="pubs/ICDMagDevBoardArticle.pdf" target="_blank">Considerations for the Design of a Reusable SOC Hardware/Software Development Board</a> magazine article ICD Magazine 2001</li>
-      <li><a href="pubs/I223.PDF" target="_blank">Verification of Lexra Processor Cores</a> conference presentation DesignCon 2000</li>
-      <li><a href="pubs/lx5280_EPF.pdf" target="_blank">High-Performance RISC-DSP for IP Licensing</a> conference presentation Microprocessor Forum 1999</li>
-      <li><a href="pubs/IdentifyingBacteria.pdf" target="_blank">Identifying Bacteria by Spectral Analysis</a> research report Westinghouse Science Talent Search 1994</li>
-    </ul>
+    <div class="pub-groups">
+      <div class="pub-group">
+        <button class="pub-decade-btn" aria-expanded="true">The AI Years <span class="pub-count">(1)</span><span class="pub-chevron">▲</span></button>
+        <ul class="pub-list">
+          <li><a href="https://arxiv.org/pdf/2010.02748" target="_blank">Neural Generation of Blocks for Video Coding</a> paper <a href="https://arxiv.org/abs/2010.02748" target="_blank">arXiv</a> 2020</li>
+        </ul>
+      </div>
+      <div class="pub-group">
+        <button class="pub-decade-btn" aria-expanded="true">The Patenting Years <span class="pub-count">(2)</span><span class="pub-chevron">▲</span></button>
+        <ul class="pub-list">
+          <li><a href="http://www.tokugikon.jp/gikonshi/287/287tokusyu5e.pdf" target="_blank">中小テック企業の特許取得戦略 －シリコンバレーの特許専門家が思う　日常業務の押さえどころ</a> article <a href="http://www.tokugikon.jp/gikonshi/287/287tokusyu5e.pdf" target="_blank">Tokugikon</a> 2017</li>
+          <li><a href="https://www.amazon.com/Patenting-Small-Company-Jonah-Probell/dp/1542841445" target="_blank">Patenting for the Small Company – Third Edition</a> book <a href="https://www.amazon.com/Patenting-Small-Company-Jonah-Probell/dp/1542841445" target="_blank">Amazon</a> 2017</li>
+        </ul>
+      </div>
+      <div class="pub-group">
+        <button class="pub-decade-btn" aria-expanded="true">The Arteris Years <span class="pub-count">(7)</span><span class="pub-chevron">▲</span></button>
+        <ul class="pub-list">
+          <li><a href="pubs/Floorplanning%20for%20NoC.pdf" target="_blank">The Rubber Jigsaw Puzzle: Floorplanning for Network-on-chip</a> conference paper SNUG 2015</li>
+          <li><a href="https://www.edn.com/slash-soc-power-consumption-in-the-interconnect/" target="_blank">Slash SoC power consumption in the interconnect</a> magazine article EDN 2014</li>
+          <li><a href="pubs/Demand-Based%20Scheduling.pdf" target="_blank">Demand-based Scheduling using NoC Probes</a> conference paper unpublished 2013</li>
+          <li><a href="pubs/Power%20and%20Area%20Benefits%20of%20Modular%20Interconnect%20Design.pdf" target="_blank">Power and Area Benefits of Modular Interconnect Design</a> white paper Arteris web site 2012</li>
+          <li><a href="pubs/Critical%20word%20first%20or%20Sequential%20cache%20miss%20refill%20policy.pdf" target="_blank">Critical word first or Sequential cache miss refill policy</a> white paper unpublished 2011</li>
+          <li><a href="pubs/The%20Growing%20Cost%20of%20Wires.pdf" target="_blank">The Growing Cost of Wires</a> white paper <a href="http://www.armtechcon.com/" target="_blank">ARM Technology Conference</a> 2010</li>
+          <li><a href="pubs/NoC%20Advantages%20for%20FPGA%20Designs.pdf" target="_blank">NoC Advantages for SoC Prototyping on Big FPGA Boards</a> white paper <a href="http://www.arteris.com/" target="_blank">Arteris</a> 2010</li>
+        </ul>
+      </div>
+      <div class="pub-group">
+        <button class="pub-decade-btn" aria-expanded="true">The Video IP Years <span class="pub-count">(20)</span><span class="pub-chevron">▲</span></button>
+        <ul class="pub-list">
+          <li><a href="http://www.eetimes.com/design/signal-processing-dsp/4204764/The-conundrum-of-peer-to-peer-video-distribution" target="_blank">The Conundrum of Peer-to-Peer Video Distribution</a> long article <a href="http://www.eetimes.com/" target="_blank">EE Times</a> Signal Processing DesignLine 2010</li>
+          <li><a href="pubs/MIPS%20in%20Handsets.pdf" target="_blank">MIPS in Handsets – Why Not?</a> article <a href="http://www.eetimes.com/" target="_blank">EE Times</a> 2009</li>
+          <li><a href="http://www.eetimes.com/electronics-news/4085279/Counterpoint-Synergies-could-trigger-a-Synopsys-ARM-merger" target="_blank">Synergies could trigger a Synopsys-ARM merger</a> article <a href="http://www.eetimes.com/" target="_blank">EE Times</a> 2009</li>
+          <li><a href="pubs/Feedback-%206%20critical%20keys%20to%20IP%20licensing%20success.pdf" target="_blank">6 critical keys to IP licensing success</a> article <a href="http://www.eetimes.com/" target="_blank">EE Times</a> 2009</li>
+          <li><a href="http://www.eetimes.com/design/signal-processing-dsp/4017765/Processor-architecture-not-a-factor-for-low-power-mobile-systems" target="_blank">Processor architecture not a factor for low-power mobile systems</a> long article Embedded Systems Design 2009</li>
+          <li><a href="pubs/WhoKilledMyBattery.html" target="_blank">Who Killed My Battery?</a> short article DSP DesignLine 2009</li>
+          <li><a href="http://www.eetimes.com/design/signal-processing-dsp/4017727/Video-processing-pipeline-design" target="_blank">Video processing pipeline design</a> article EE Times DSP DesignLine 2008</li>
+          <li><a href="pubs/Differentiate_with_Video_Processing_Tensilica.pdf" target="_blank">A Designer’s Guide to HD Video Pre- and Post-Processing</a> white paper Tensilica 2008</li>
+          <li><a href="pubs/Portable%20Design%20Conference%202008%20-%20Truly%20Understanding%20Low-Power%20Multimedia%20Chip%20Design%20r2.ppt" target="_blank">Truly Understanding Low-Power Multimedia Chip Design</a> conference presentation Portable Design Conference 2008</li>
+          <li><a href="pubs/video_frame_processing.pdf" target="_blank">Frame Processing Time Deviations in Video Processors</a> white paper Tensilica 2008</li>
+          <li><a href="http://w.on24.com/r.htm?e=94261&s=1&k=B376DEE20ACD32D059D88C7B55F5D2F0" target="_blank">Selecting Video IP for SOC Design: Ask the Tough Questions</a> webcast EDN 2007</li>
+          <li><a href="http://www.eetimes.com/electronics-news/4073699/Letter-to-the-editor-IP-pros-cons" target="_blank">Letter to the editor: IP pros, cons</a> magazine article EE Times 2007</li>
+          <li><a href="http://www.portabledesign.com/article?article_id=36" target="_blank">Minimizing Power Consumption in a Mobile Video Subsystem</a> magazine article Portable Design 2007</li>
+          <li><a href="pubs/A_Brief_History_of_Video_Coding_wp.pdf" target="_blank">A Brief History of Video Coding</a> white paper ARC 2007</li>
+          <li><a href="http://www.eetimes.com/design/signal-processing-dsp/4017472/Quick-tip-Memory-bandwidth-metrics-for-video-processing" target="_blank">Memory bandwidth metrics for video processing</a> magazine article DSP DesignLine</li>
+          <li><a href="pubs/GhostsOfVideoProcessors.html" target="_blank">Ghosts of Video Processors Past, Present, and Future</a> magazine article unpublished 2006</li>
+          <li><a href="http://www.eetimes.com/electronics-products/processors/4088520/ARCHITECTURES-Multimedia-platform-stresses-flexibility" target="_blank">ARCHITECTURES: Multimedia platform stresses flexibility</a> magazine article quotation EE Times 2006</li>
+          <li><a href="pubs/ARC%20IP%20for%20Multicore%20DSP-Processor%20SoCs.ppt" target="_blank">Integrating IP in Multicore DSP/Processor SoCs</a> conference panel Global Signal Processing Conference 2006</li>
+          <li><a href="pubs/System%20Design%20Tricks%20for%20Low-Power%20Video%20rev%202.ppt" target="_blank">System Design Tricks for Low-Power Video Processing</a> conference presentation Global Signal Processing Conference 2006</li>
+          <li><a href="pubs/ARC%20GSPx%202006%20Paper.pdf" target="_blank">System Design Tricks for Low-Power Video Processing</a> conference paper Global Signal Processing Conference 2006</li>
+        </ul>
+      </div>
+      <div class="pub-group">
+        <button class="pub-decade-btn" aria-expanded="true">The Ultra Data Years <span class="pub-count">(11)</span><span class="pub-chevron">▲</span></button>
+        <ul class="pub-list">
+          <li><a href="pubs/PCS2006JonahProbell.pdf" target="_blank">Architecture Considerations for Multi-Format Programmable Video Processors</a> journal article IEEE Journal of Signal Processing Systems for Signal, Image, and Video Technology 2006</li>
+          <li><a href="pubs/PCS2006JonahProbell.pdf" target="_blank">Architecture Considerations for Multi-Format Programmable Video Processors</a> conference paper Picture Coding Symposium 2006</li>
+          <li><a href="pubs/DesignCon2005_video_intro.pps" target="_blank">The Trade-Offs of Software Programmability in Video Processors</a> conference panel DesignCon 2005</li>
+          <li><a href="pubs/20060282588.pdf" target="_blank">Processor system that allows for simultaneous access by multiple requestors to a target with multiple ports</a> patent application US Patent &amp; Trademark Office 2005</li>
+          <li><a href="pubs/20060206695.pdf" target="_blank">Data movement within a processor</a> patent application US Patent &amp; Trademark Office 2005</li>
+          <li><a href="pubs/DesignCon2004_Paper.pdf" target="_blank">Improving Application Performance with Instruction Set Architecture Extensions to Embedded Processors</a> conference paper DesignCon 2004</li>
+          <li><a href="pubs/Predictions2005.pdf" target="_blank">Digital Video to Come Alive in 2005</a> magazine article TechOnLine 2004</li>
+          <li><a href="pubs/GSPx2004.pps" target="_blank">What Choices Make a Killer Video Processor Architecture (presentation slides)</a> conference presentation Global Signal Processing Conference 2004</li>
+          <li><a href="pubs/GSPx2004_audio.pps" target="_blank">What Choices Make a Killer Video Processor Architecture (presentation slides with audio narration)</a> conference presentation Global Signal Processing Conference 2004</li>
+          <li><a href="pubs/GSPx2004.pdf" target="_blank">What Choices Make a Killer Video Processor Architecture (published paper)</a> conference paper Global Signal Processing Conference 2004</li>
+          <li><a href="pubs/JP_TechOnLine_VidProc_v2.pdf" target="_blank">Processor Architecture for High Performance Video Decode</a> article Video/Imaging DesignLine 2004</li>
+          <li><a href="pubs/EPF_2004.pdf" target="_blank">The Ultra Data UD3000: A Next Generation Video Processor Core</a> conference presentation Embedded Processor Forum 2004</li>
+        </ul>
+      </div>
+      <div class="pub-group">
+        <button class="pub-decade-btn" aria-expanded="true">The Lexra Years <span class="pub-count">(6)</span><span class="pub-chevron">▲</span></button>
+        <ul class="pub-list">
+          <li><a href="pubs/lx5380_MPF_final.pdf" target="_blank">LX5380 RISC-DSP for New Internet Applications</a> conference presentation Microprocessor Forum 2001</li>
+          <li><a href="pubs/ICDMagDevBoardArticle.pdf" target="_blank">Considerations for the Design of a Reusable SOC Hardware/Software Development Board</a> magazine article ICD Magazine 2001</li>
+          <li><a href="pubs/I223.PDF" target="_blank">Verification of Lexra Processor Cores</a> conference presentation DesignCon 2000</li>
+          <li><a href="pubs/Endianness.pdf" target="_blank">Endianness</a> technical brief unpublished</li>
+          <li><a href="pubs/lx5280_EPF.pdf" target="_blank">High-Performance RISC-DSP for IP Licensing</a> conference presentation Microprocessor Forum 1999</li>
+        </ul>
+      </div>
+      <div class="pub-group">
+        <button class="pub-decade-btn" aria-expanded="true">Miscellaneous <span class="pub-count">(2)</span><span class="pub-chevron">▲</span></button>
+        <ul class="pub-list">
+          <li><a href="pubs/Midpoint%20at%20237%20City%20Council%20Packet.pdf" target="_blank">Midpoint at 237 City Council Packet</a> letter to city council San Jose city planning department 2014</li>
+          <li><a href="pubs/IdentifyingBacteria.pdf" target="_blank">Identifying Bacteria by Spectral Analysis</a> research report Westinghouse Science Talent Search 1994</li>
+        </ul>
+      </div>
+    </div>
+
 
       </div>
+
+  <script>
+    // ── Diamond dividers on about page ──
+
+    // ── Stat counters ──
+    (function () {
+      var nums = document.querySelectorAll('.stat-num');
+      if (!nums.length) return;
+      var done = false;
+      function countUp() {
+        if (done) return;
+        var row = document.querySelector('.stat-row');
+        if (!row) return;
+        var rect = row.getBoundingClientRect();
+        if (rect.top > window.innerHeight) return;
+        done = true;
+        nums.forEach(function (el) {
+          var target = parseInt(el.dataset.target, 10);
+          var start = performance.now();
+          var dur = 1200;
+          function step(now) {
+            var t = Math.min((now - start) / dur, 1);
+            var ease = 1 - Math.pow(1 - t, 3);
+            el.textContent = Math.round(ease * target);
+            if (t < 1) requestAnimationFrame(step);
+          }
+          requestAnimationFrame(step);
+        });
+      }
+      window.addEventListener('scroll', countUp, {passive: true});
+      countUp();
+    })();
+
+    // ── Timeline scroll-in ──
+    (function () {
+      var items = document.querySelectorAll('.tl-item');
+      if (!items.length) return;
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) { e.target.classList.add('tl-visible'); }
+        });
+      }, {threshold: 0.2});
+      items.forEach(function (el) { io.observe(el); });
+    })();
+  </script>
+
+  <script>
+    // ── Publication decade toggles ──
+    (function () {
+      document.querySelectorAll('.pub-decade-btn').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var list = btn.nextElementSibling;
+          var expanded = btn.getAttribute('aria-expanded') === 'true';
+          btn.setAttribute('aria-expanded', !expanded);
+          btn.querySelector('.pub-chevron').textContent = expanded ? '▼' : '▲';
+          list.style.display = expanded ? 'none' : '';
+        });
+      });
+    })();
+
+  </script>
+
+  <script>
+    // ── Dark mode ──
+    (function () {
+      var html = document.documentElement;
+      var btn  = document.getElementById('theme-toggle');
+      var stored = localStorage.getItem('theme') || 'light';
+      html.setAttribute('data-theme', stored);
+      btn.textContent = stored === 'dark' ? '☀ Light' : '◑ Dark';
+      btn.addEventListener('click', function () {
+        var current = html.getAttribute('data-theme');
+        var next = current === 'dark' ? 'light' : 'dark';
+        html.setAttribute('data-theme', next);
+        btn.textContent = next === 'dark' ? '☀ Light' : '◑ Dark';
+        localStorage.setItem('theme', next);
+      });
+    })();
+  </script>
 </body>
 </html>

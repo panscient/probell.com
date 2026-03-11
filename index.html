@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,6 +20,7 @@
       <li><a href="patenting.html">Patenting</a></li>
       <li><a href="about.html">About</a></li>
     </ul>
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">☀ Light</button>
   </div>
 
   <div class="content">
@@ -28,7 +29,7 @@
     <div class="intro-block">
       <img class="intro-photo" src="jonah_picnic.png" alt="Jonah Probell" />
       <div>
-        <p class="intro-hi">Hi!</p>
+        <p class="intro-hi"><span id="typewriter-hi"></span></p>
         <p class="intro-name">I'm Jonah Probell.</p>
         <p>I am the founding partner of <a href="https://www.lexi.vc/" target="_blank">Lexi Ventures</a>.</p>
         <p>We invest in the genetic engineering revolution.</p>
@@ -76,7 +77,7 @@
     </div>
 
     <!-- ── Books ── -->
-    <hr class="section-divider" id="books" />
+    <hr class="section-divider" />
     <h2 class="section-heading">Read</h2>
     <p>I have written two books on patenting.</p>
 
@@ -126,7 +127,12 @@
 
       function render() {
         if (!tweets.length) return;
-        document.getElementById('tweet-text').innerHTML = tweets[idx];
+        var el = document.getElementById('tweet-text');
+        el.style.opacity = '0';
+        setTimeout(function () {
+          el.innerHTML = tweets[idx];
+          el.style.opacity = '1';
+        }, 180);
       }
 
       fetch(TWEETS_URL)
@@ -157,5 +163,43 @@
 
   </script>
 
+  <script>
+    // ── Typewriter ──
+    (function () {
+      var el = document.getElementById('typewriter-hi');
+      if (!el) return;
+      var text = 'Hi!';
+      var i = 0;
+      el.textContent = '';
+      function type() {
+        if (i < text.length) {
+          el.textContent += text[i++];
+          setTimeout(type, i === 1 ? 180 : 120);
+        }
+      }
+      setTimeout(type, 400);
+    })();
+
+
+  </script>
+
+
+  <script>
+    // ── Dark mode ──
+    (function () {
+      var html = document.documentElement;
+      var btn  = document.getElementById('theme-toggle');
+      var stored = localStorage.getItem('theme') || 'light';
+      html.setAttribute('data-theme', stored);
+      btn.textContent = stored === 'dark' ? '☀ Light' : '◑ Dark';
+      btn.addEventListener('click', function () {
+        var current = html.getAttribute('data-theme');
+        var next = current === 'dark' ? 'light' : 'dark';
+        html.setAttribute('data-theme', next);
+        btn.textContent = next === 'dark' ? '☀ Light' : '◑ Dark';
+        localStorage.setItem('theme', next);
+      });
+    })();
+  </script>
 </body>
 </html>
