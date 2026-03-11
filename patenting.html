@@ -28,6 +28,11 @@
 
     <p>I spent 12 years managing patent portfolios in-house for a semiconductor IP company and an AI software company. I also hosted the Discussion of Patents meetup for startups for 10 years. This page answers the top questions I get from inventor-entrepreneurs.</p>
 
+    <div class="expand-collapse-bar">
+      <button class="ec-btn" id="expand-all">Expand all</button>
+      <button class="ec-btn" id="collapse-all">Collapse all</button>
+    </div>
+
     <div class="collapsible-section">
       <button class="collapsible-btn" aria-expanded="false" aria-controls="sec-why-patents">
         <span>Why you might want patents?</span><span class="collapsible-chevron">▼</span>
@@ -396,6 +401,23 @@
         btn.textContent = next === 'dark' ? '☀ Light' : '◑ Dark';
         localStorage.setItem('theme', next);
       });
+    })();
+
+    // ── Expand / collapse all ──
+    (function () {
+      function setAll(expand) {
+        document.querySelectorAll('.collapsible-btn').forEach(function (btn) {
+          var body = document.getElementById(btn.getAttribute('aria-controls'));
+          btn.setAttribute('aria-expanded', expand);
+          btn.querySelector('.collapsible-chevron').textContent = expand ? '▲' : '▼';
+          if (expand) { body.removeAttribute('hidden'); }
+          else { body.setAttribute('hidden', ''); }
+        });
+      }
+      var ea = document.getElementById('expand-all');
+      var ca = document.getElementById('collapse-all');
+      if (ea) ea.addEventListener('click', function () { setAll(true); });
+      if (ca) ca.addEventListener('click', function () { setAll(false); });
     })();
   </script>
 </body>

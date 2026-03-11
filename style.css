@@ -678,3 +678,37 @@ body {
   border-color: rgba(255,255,255,0.7);
   color: #fff;
 }
+
+/* ── Expand / collapse all bar ── */
+.expand-collapse-bar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.ec-btn {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  border: 1px solid var(--border-dark);
+  border-radius: 4px;
+  color: var(--accent);
+  cursor: pointer;
+  font-size: 13px;
+  font-family: inherit;
+  padding: 5px 14px;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.ec-btn:hover {
+  border-color: var(--accent);
+  background: var(--bg-subtle);
+}
+
+/* ── SVG book cover ── */
+.book-cover-svg {
+  width: 188px;
+  height: auto;
+  display: block;
+  border: 1px solid var(--border-mid);
+}
